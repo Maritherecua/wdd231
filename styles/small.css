@@ -121,9 +121,22 @@ h2 {
     border-bottom: 2px solid var(--accent-color);
 }
 
+/* Intro Container */
+.intro-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
 /* About Me Section */
 .about-me {
-    margin-bottom: 3rem;
+    margin-bottom: 0;
+}
+
+/* Student Photo Section */
+.student-photo {
+    text-align: center;
 }
 
 .about-content {

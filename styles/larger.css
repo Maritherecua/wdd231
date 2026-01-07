@@ -33,19 +33,21 @@
         grid-template-columns: repeat(2, 1fr);
     }
 
-    /* About Me layout side by side */
-    .about-content {
+    /* Intro container - side by side layout */
+    .intro-container {
         flex-direction: row;
+        gap: 2rem;
         align-items: flex-start;
+    }
+
+    .about-me,
+    .student-photo {
+        flex: 1;
     }
 
     .profile-photo {
         max-width: 250px;
-        flex-shrink: 0;
-    }
-
-    .about-text {
-        flex: 1;
+        width: 100%;
     }
 }
 
