@@ -55,7 +55,17 @@
 
         <section class="certificates">
             <h2>Certificates</h2>
-            <p>Content for certificates section goes here.</p>
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All Courses</button>
+                <button class="filter-btn" data-filter="WDD">WDD Courses</button>
+                <button class="filter-btn" data-filter="CSE">CSE Courses</button>
+            </div>
+            <div class="course-grid" id="course-grid">
+                <!-- Courses will be dynamically inserted here -->
+            </div>
+            <div class="course-credits">
+                Total Credits: <span id="total-credits">0</span>
+            </div>
         </section>
         <footer>
             <div class="social-media-links">
@@ -87,8 +97,8 @@
                 Last modified: <span id="last-modified-date"></span>
             </div>
         </footer>
-        <script src="scripts/main.js">            <img src="images/github-icon.svg" alt="GitHub" />
-        </script>
+        <script src="scripts/main.js"></script>
+        <script src="scripts/course-list-array.js"></script>
     </main>
     <!--
             <a href="https://www.linkedin.com/in/mariaarroyo" target="_blank" rel="noopener noreferrer">
