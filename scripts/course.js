@@ -1,1 +1,0 @@
-/* supports course information cards */
