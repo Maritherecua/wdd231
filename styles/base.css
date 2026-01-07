@@ -1,0 +1,220 @@
+/* Base CSS - Mobile First Design */
+:root {
+    --primary-color: #2c3e50;
+    --secondary-color: #34495e;
+    --accent-color: #3498db;
+    --text-color: #333;
+    --light-gray: #ecf0f1;
+    --border-color: #bdc3c7;
+    --white: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--white);
+}
+
+/* Header */
+header {
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 1rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo img {
+    height: 40px;
+    width: auto;
+}
+
+.author-name {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.hamburger-icon {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    padding: 5px;
+}
+
+.hamburger-icon span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: var(--white);
+    transition: 0.3s;
+}
+
+/* Navigation */
+nav {
+    background-color: var(--secondary-color);
+    display: none;
+}
+
+nav.open {
+    display: block;
+}
+
+nav ul {
+    list-style: none;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+nav li {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+nav a {
+    display: block;
+    padding: 1rem;
+    color: var(--white);
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+nav a:hover,
+nav a.active {
+    background-color: var(--accent-color);
+}
+
+/* Main Content */
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: var(--primary-color);
+    text-align: center;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid var(--accent-color);
+}
+
+/* About Me Section */
+.about-me {
+    margin-bottom: 3rem;
+}
+
+.about-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.profile-photo {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+}
+
+.about-text p {
+    margin-bottom: 1rem;
+    text-align: justify;
+}
+
+/* Courses Section */
+.courses {
+    margin-bottom: 3rem;
+}
+
+.course-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.course-card {
+    background-color: var(--light-gray);
+    padding: 1.5rem;
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.course-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.course-card h3 {
+    color: var(--primary-color);
+    font-size: 1.2rem;
+}
+
+.course-credits {
+    text-align: center;
+    font-style: italic;
+    color: var(--secondary-color);
+    margin-top: 1rem;
+}
+
+/* Footer */
+footer {
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+.social-media-links {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.social-media-links a {
+    color: var(--white);
+    transition: color 0.3s, transform 0.3s;
+}
+
+.social-media-links a:hover {
+    color: var(--accent-color);
+    transform: scale(1.1);
+}
+
+.copyright {
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+}
+
+.last-modified {
+    font-size: 0.85rem;
+    color: rgba(255, 255, 255, 0.8);
+}

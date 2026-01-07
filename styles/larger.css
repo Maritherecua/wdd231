@@ -1,0 +1,91 @@
+/* Tablet and Larger Screens */
+@media (min-width: 640px) {
+
+    /* Navigation becomes horizontal */
+    .hamburger-icon {
+        display: none;
+    }
+
+    nav {
+        display: block !important;
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: center;
+    }
+
+    nav li {
+        border-bottom: none;
+        border-right: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    nav li:last-child {
+        border-right: none;
+    }
+
+    nav a {
+        padding: 1rem 2rem;
+    }
+
+    /* Course grid - 2 columns */
+    .course-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* About Me layout side by side */
+    .about-content {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .profile-photo {
+        max-width: 250px;
+        flex-shrink: 0;
+    }
+
+    .about-text {
+        flex: 1;
+    }
+}
+
+@media (min-width: 768px) {
+
+    /* Course grid - 3 columns */
+    .course-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        font-size: 1.75rem;
+    }
+}
+
+@media (min-width: 1024px) {
+
+    /* Larger padding for desktop */
+    main {
+        padding: 3rem 2rem;
+    }
+
+    header {
+        padding: 1.5rem 2rem;
+    }
+
+    /* Course grid - up to 5 columns for larger screens */
+    .course-grid {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+
+    .profile-photo {
+        max-width: 300px;
+    }
+
+    .about-content {
+        gap: 2rem;
+    }
+}

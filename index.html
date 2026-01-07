@@ -1,76 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Page Example HTML Document</title>
-    <meta name="description" content="This is a sample HTML document.">
+    <title>Maria Arroyo - WDD 231 - Web Frontend Development</title>
+    <meta name="description" content="WDD 231 - Web Frontend Development course home page for Maria Arroyo">
     <meta name="author" content="Maria Arroyo">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
 </head>
+
 <body>
-    <!--the header tag should contain a site logo (using an svg file) and my name renederd using a <span> tag and a hamburguer icon on small screens-->
-    <!--the responsive navigation menu contains three links: Home-this current page, Chamber, Final-->
     <header>
-        <div class="logo">
-            <img src="logo.svg" alt="Site Logo" />
-        </div>
-        <span class="author-name">Maria Arroyo</span>
-        <div class="hamburger-icon">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <rect y="4" width="24" height="2" fill="black"/>
-                <rect y="11" width="24" height="2" fill="black"/>
-                <rect y="18" width="24" height="2" fill="black"/>
-            </svg>
+        <div class="header-content">
+            <div class="logo">
+                <img src="images/logo.svg" alt="Site Logo" />
+            </div>
+            <span class="author-name">Maria Arroyo</span>
+            <button id="menu-toggle" class="hamburger-icon" aria-label="Toggle navigation menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
         </div>
     </header>
-    <nav>
+    <nav id="nav-menu">
         <ul>
             <li><a href="index.html" class="active">Home</a></li>
-            <li><a href="chamber.html">Chamber</a></li>
-            <li><a href="final.html">Final</a></li>
+            <li><a href="chamber.html">Chamber Project</a></li>
+            <li><a href="final.html">Final Project</a></li>
         </ul>
     </nav>
     <!--the main element contents: The heading "Home" rendered using an <h1> tag, three section tags with headings <h2>-->
     <main>
+        main>
         <h1>Home</h1>
-        <section>
-            <h2>Section 1</h2>
-            <p>This is the content for section 1.</p>
+
+        <section class="about-me">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <img src="images/profile.jpg" alt="Maria Arroyo" class="profile-photo">
+                <div class="about-text">
+                    <p>Mission Facilities Per Plena Si Imperdiet Coner Arient Si Karate Lauren At Phasellus Congue
+                        Natosque Eorm.</p>
+                    <p>Gravida Laoreet Ut Monte Moli Viverra Augue Commen Prequent Vivamus</p>
+                    <p>At Dula Magna, Quam Fringilla Convallis Bibendum Molestibus Accumsan Natoeque Magna Volutapt
+                        Rutrbl Ipsum, Qui Maecenas Et Potsentle Class Feugiate.</p>
+                </div>
+            </div>
         </section>
-        <section>
-            <h2>Section 2</h2>
-            <p>This is the content for section 2.</p>
-        </section>
-        <section>
-            <h2>Section 3</h2>
-            <p>This is the content for section 3.</p>
-        </section>
-    </main>
-     <!--the footer has three items: 1- a series of social media links including GitHub and LinkedIn and 2 others.This icons should link to my GitHub repository and LinkeIn account.-->
-    <footer>
-        <div class="social-media-links">
-            <a href="images/github-icon.svg" target="_blank" rel="noopener noreferrer">
-                <img src="images/github-icon.svg" alt="GitHub" />
-            </a>
+        <footer>
+            <div class="social-media-links">
+                <a href="https://www.linkedin.com/in/mariaarroyo" target="_blank" rel="noopener noreferrer"
+                    aria-label="LinkedIn">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                            d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z" />
+                    </svg>
+                </a>
+                <a href="https://github.com/Maritherecua" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                            d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2z" />
+                    </svg>
+                </a>
+                <a href="https://twitter.com/mariaarroyo" target="_blank" rel="noopener noreferrer"
+                    aria-label="X (Twitter)">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                            d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+                    </svg>
+                </a>
+            </div>
+            <div class="copyright">
+                &copy; <span id="current-year"></span> Maria Arroyo, Utah, USA
+            </div>
+            <div class="last-modified">
+                Last modified: <span id="last-modified-date"></span>
+            </div>
+        </footer>
+        <script src="scripts/main.js">            <img src="images/github-icon.svg" alt="GitHub" />
+            </a >
             <a href="https://www.linkedin.com/in/mariaarroyo" target="_blank" rel="noopener noreferrer">
                 <img src="images/linkedin-icon.svg" alt="LinkedIn" />
             </a>
             <a href="https://twitter.com/mariaarroyo" target="_blank" rel="noopener noreferrer">
                 <img src="images/twitter-icon.svg" alt="Twitter" />
             </a>
-        </div>
+        </div >
         <div class="copyright">
             &copy; <span id="current-year"></span> Maria Arroyo, USA
         </div>
         <div class="last-modified">
             Last modified: <span id="last-modified-date"></span>
         </div>
-    </footer>
-    <script>
+    </footer >
+                <script>
         // Set current year
-        document.getElementById('current-year').textContent = new Date().getFullYear(); 
-        // Set last modified date
-        document.getElementById('last-modified-date').textContent = document.lastModified;
-    </script>       
+                    document.getElementById('current-year').textContent = new Date().getFullYear();
+                    // Set last modified date
+                    document.getElementById('last-modified-date').textContent = document.lastModified;
+        </script>
 </body>
+
 </html>
