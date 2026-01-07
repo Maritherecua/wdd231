@@ -3,9 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Home Page Example HTML Document</title>
+    <meta name="description" content="This is a sample HTML document.">
+    <meta name="author" content="Maria Arroyo">
 </head>
 <body>
-    
+    <!--the header tag should contain a site logo (using an svg file) and my name renederd using a <span> tag and a hamburguer icon on small screens-->
+    <!--the responsive navigation menu contains three links: Home-this current page, Chamber, Final-->
+    <header>
+        <div class="logo">
+            <img src="logo.svg" alt="Site Logo" />
+        </div>
+        <span class="author-name">Maria Arroyo</span>
+        <div class="hamburger-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect y="4" width="24" height="2" fill="black"/>
+                <rect y="11" width="24" height="2" fill="black"/>
+                <rect y="18" width="24" height="2" fill="black"/>
+            </svg>
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="chamber.html">Chamber</a></li>
+            <li><a href="final.html">Final</a></li>
+        </ul>
+    </nav>
+    <!--the main element contents: The heading "Home" rendered using an <h1> tag, three section tags with headings <h2>-->
+    <main>
+        <h1>Home</h1>
+        <section>
+            <h2>Section 1</h2>
+            <p>This is the content for section 1.</p>
+        </section>
+        <section>
+            <h2>Section 2</h2>
+            <p>This is the content for section 2.</p>
+        </section>
+        <section>
+            <h2>Section 3</h2>
+            <p>This is the content for section 3.</p>
+        </section>
+    </main>
+     <!--the footer has three items: 1- a series of social media links including GitHub and LinkedIn and 2 others.This icons should link to my GitHub repository and LinkeIn account.-->
+    <footer>
+        <div class="social-media-links">
+            <a href="images/github-icon.svg" target="_blank" rel="noopener noreferrer">
+                <img src="images/github-icon.svg" alt="GitHub" />
+            </a>
+            <a href="https://www.linkedin.com/in/mariaarroyo" target="_blank" rel="noopener noreferrer">
+                <img src="images/linkedin-icon.svg" alt="LinkedIn" />
+            </a>
+            <a href="https://twitter.com/mariaarroyo" target="_blank" rel="noopener noreferrer">
+                <img src="images/twitter-icon.svg" alt="Twitter" />
+            </a>
+        </div>
+        <div class="copyright">
+            &copy; <span id="current-year"></span> Maria Arroyo, USA
+        </div>
+        <div class="last-modified">
+            Last modified: <span id="last-modified-date"></span>
+        </div>
+    </footer>
+    <script>
+        // Set current year
+        document.getElementById('current-year').textContent = new Date().getFullYear(); 
+        // Set last modified date
+        document.getElementById('last-modified-date').textContent = document.lastModified;
+    </script>       
 </body>
 </html>
