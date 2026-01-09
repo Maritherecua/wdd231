@@ -194,7 +194,7 @@ h2 {
 .filter-btn.active {
     background-color: var(--accent-color);
     color: var(--white);
-    border-color: var(--accent-color);
+    border-color: var(--light-gray);
 }
 
 /* Courses Section */
