@@ -2,7 +2,7 @@
 :root {
     --primary-color: #2c3e50;
     --secondary-color: #34495e;
-    --accent-color: #2874a6;
+    --accent-color: #1a5490;
     --text-color: #333;
     --light-gray: #ecf0f1;
     --border-color: #bdc3c7;
@@ -96,7 +96,7 @@ nav a {
 
 nav a:hover,
 nav a.active {
-    background-color: var(--dark-gray);
+    background-color: var(--accent-color);
 }
 
 /* Main Content */
