@@ -69,6 +69,7 @@ header {
 /* Navigation */
 nav {
     background-color: var(--secondary-color);
+    color: var(--white);
     display: none;
 }
 
