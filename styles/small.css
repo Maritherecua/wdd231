@@ -120,6 +120,7 @@ h2 {
     color: var(--primary-color);
     padding-bottom: 0.5rem;
     border-bottom: 2px solid var(--accent-color);
+    text-align: center;
 }
 
 /* Intro Container */
@@ -133,6 +134,7 @@ h2 {
 /* About Me Section */
 .about-me {
     margin-bottom: 0;
+    text-align: center;
 }
 
 /* Student Photo Section */
