@@ -1,0 +1,54 @@
+/*grid class rule, autocolumn grid*/
+
+
+header, footer {
+    text-align: center;
+    background-color: rgb(70, 69, 73);
+    width: 100%;
+    padding: 20px;
+}
+header h1 {
+    margin: 0;
+    line-height: 65px;
+    color: white;
+}
+body {
+    font-family: Roboto, sans-serif;
+}
+h1 {
+    text-align: center;
+}
+#cards{
+    display: grid;
+    margin: 0 auto;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 0.5rem;
+    column-gap: 10px;
+}
+#cards section {
+    border: 1px solid #ccc;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    text-align: center;
+    box-shadow: 5px 5px 10px #ccc;
+}
+#cards h2{
+    font-size: 1.5rem;
+    color: black;
+    padding: auto;
+}
+img {
+    max-width: 325px;
+    margin:10px 2%;
+    height: auto;
+    width: 90%;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 30px #ccc; 
+}
+footer {
+    text-align: center;
+    background-color: rgb(70, 69, 73);
+    color: white;
+    width: 100%;
+    padding: 20px;  
+}
