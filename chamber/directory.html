@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Directory | Manteca Chamber of Commerce</title>
-    <meta name="description" content="Explore the Manteca Chamber of Commerce directory to find local businesses, services, and resources in Manteca, CA. Connect with the community and support local enterprises.">
+    <meta name="description"
+        content="Explore the Manteca Chamber of Commerce directory to find local businesses, services, and resources in Manteca, CA. Connect with the community and support local enterprises.">
     <meta name="author" content="Maria Arroyo">
     <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
     <!--styles -->
@@ -17,17 +19,90 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400...700&display=swap" rel="stylesheet">
     <!-- Open Graph Meta Tags (FaceBook social media)-->
     <meta property="og:title" content="Directory | Manteca Chamber of Commerce">
-    <meta property="og:description" content="Explore the Manteca Chamber of Commerce directory to find local businesses, services, and resources in Manteca, CA. Connect with the community and support local enterprises.">
-    <meta property="og:image" content="https://maritherecua.github.io/wdd231/chamber/images/hero.webp"/>
+    <meta property="og:description"
+        content="Explore the Manteca Chamber of Commerce directory to find local businesses, services, and resources in Manteca, CA. Connect with the community and support local enterprises.">
+    <meta property="og:image" content="https://maritherecua.github.io/wdd231/chamber/images/hero.webp" />
     <meta property="og:url" content="https://maritherecua.github.io/wdd231/chamber">
     <!-- Twitter Card Meta Tags -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Directory | Manteca Chamber of Commerce">
-    <meta name="twitter:description" content="Explore the Manteca Chamber of Commerce directory to find local businesses, services, and resources in Manteca, CA. Connect with the community and support local enterprises.">
-    <meta name="twitter:image" content="https://maritherecua.github.io/wdd231/chamber/images/hero.webp"/>
+    <meta name="twitter:description"
+        content="Explore the Manteca Chamber of Commerce directory to find local businesses, services, and resources in Manteca, CA. Connect with the community and support local enterprises.">
+    <meta name="twitter:image" content="https://maritherecua.github.io/wdd231/chamber/images/hero.webp" />
     <!-- JavaScript -->
 </head>
+
 <body>
-    
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html"><img src="images/logo.png" alt="Manteca Chamber of Commerce Logo"></a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="directory-intro">
+            <h1>Business Directory</h1>
+            <p>Welcome to the Manteca Chamber of Commerce directory. Here you can find a comprehensive list of local
+                businesses and services in Manteca, CA. Support our community by connecting with these enterprises!</p>
+        </section>
+        <section class="grid" id="members">
+            <h2>Local Businesses</h2>
+            <ul>
+                <li>Business 1</li>
+                <li>Business 2</li>
+            </ul>
+        </section>
+
+
+    </main>
+    <footer>
+        <section class="address">
+            <p>Manteca Chamber of Commerce</p>
+            <p>123 Main Street, Manteca, CA 95336</p>
+            <p>Email: info@mantecachamber.com</p>
+            <p>Phone: (209) 123-4567</p>
+        </section>
+        <section class="social-media">
+            <a href="https://www.facebook.com/mantecachamber" target="_blank">Facebook</a>
+            <a href="https://www.twitter.com/mantecachamber" target="_blank">Twitter</a>
+            <a href="https://www.instagram.com/mantecachamber" target="_blank">Instagram</a>
+        </section>
+        <section class="newsletter">
+            <h3>Subscribe to our Newsletter</h3>
+            <form action="#" method="post">
+                <input type="email" name="email" placeholder="Enter your email" required>
+                <button type="submit">Subscribe</button>
+            </form>
+
+        </section>
+        <section class="credits">
+            <li> WDD231 Web Development 1 | BYU-Idaho </li>
+        </section>
+        <div class="copyright">
+            &copy; <span id="current-year"></span> Maria Arroyo, Manteca,California, USA
+        </div>
+        <div class="last-modified">
+            Last modified: <span id="last-modified-date"></span>
+        </div>
+        <ul>
+            <li><span id="current-year"></span> Manteca Chamber of Commerce. All rights reserved.</li>
+        </ul>
+
+    </footer>
+    <script>
+        const currentYearElement = document.getElementById('current-year');
+        if (currentYearElement) {
+            currentYearElement.textContent = new Date().getFullYear();
+        }
+    </script>
 </body>
+
 </html>
