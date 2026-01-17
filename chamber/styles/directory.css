@@ -138,6 +138,15 @@ a {
     object-fit: contain;
 }
 
+.chamber-name {
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0;
+    flex-grow: 1;
+    padding-left: 10px;
+}
+
 .social-icons {
     display: none;
 }
