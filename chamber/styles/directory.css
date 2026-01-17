@@ -310,6 +310,11 @@ footer {
     height: auto;
 }
 
+.footend-container ul {
+    text-align: center;
+    padding: 15px;
+}
+
 .footer-end {
     padding: 20px;
     display: flex;
