@@ -313,6 +313,11 @@ footer {
 .footend-container ul {
     text-align: center;
     padding: 15px;
+    list-style: none;
+}
+
+.footend-container li {
+    text-align: center;
 }
 
 .footer-end {
