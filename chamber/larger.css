@@ -76,6 +76,7 @@
         display: flex;
         justify-content: flex-end;
         background-color: #fff0;
+        grid-template-rows: unset;
     }
 
     #icon-menu {
@@ -88,16 +89,17 @@
         justify-content: flex-end;
         align-items: center;
         gap: 20px;
+        overflow: visible;
     }
 
     .nav-container .nav-links a {
-        color: #1a1f8e;
+        color: white;
         font-weight: 600;
     }
 
     .nav-container .nav-links a.active {
-        color: #1a1f8e;
-        text-decoration: 2px #1a1f8e underline;
+        color: white;
+        text-decoration: 2px white underline;
     }
 
     .nav-container span img {

@@ -159,18 +159,17 @@ a {
     display: none;
 }
 
-.nav-container nav {
+.nav-container .nav-links {
     display: grid;
     grid-template-rows: 0fr;
     transition: grid-template-rows .5s ease-out;
-
 }
 
-.nav-container nav ul {
+.nav-container .nav-links ul {
     overflow: hidden;
 }
 
-.nav-container nav.open {
+.nav-container .nav-links.open {
     grid-template-rows: 1fr;
 }
 
