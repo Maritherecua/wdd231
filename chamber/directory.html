@@ -11,7 +11,7 @@
     <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
     <!--styles -->
     <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/directory.css">
     <link rel="stylesheet" href="styles/larger.css">
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -33,11 +33,11 @@
 </head>
 
 <body>
-    <header>
-        <nav>
-            <div class="logo">
+    <header class="top-container">
+        <nav class="items-left">
+            < class="logo">
                 <a href="index.html"><img src="images/logo.png" alt="Manteca Chamber of Commerce Logo"></a>
-            </div>
+            
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About Us</a></li>
@@ -46,43 +46,77 @@
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
+        <nav class="items-right">
+            <ul>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+            </nav>
+    </header>
+    <header>
+        <div class="nav-menu-container">
+            <span>
+                <a href="index.html">
+                    <img src="images/logo.png" alt="Manteca Chamber of Commerce Logo">
+                </a>
+                <span id="icon-menu"></span>
+            </span>
+            <nav class="nav-links">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="directory.html">Directory</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            </div>
     </header>
     <main>
-        <section class="directory-intro">
+        <section class="intro-msg-container">
             <h1>Business Directory</h1>
             <p>Welcome to the Manteca Chamber of Commerce directory. Here you can find a comprehensive list of local
                 businesses and services in Manteca, CA. Support our community by connecting with these enterprises!</p>
-        </section>
-        <section class="grid" id="members">
-            <h2>Local Businesses</h2>
-            <ul>
-                <li>Business 1</li>
-                <li>Business 2</li>
-            </ul>
-        </section>
+                <br>
+            <p>Browse through our directory to discover the diverse range of businesses that make Manteca a vibrant community. Whether you're looking for dining, shopping, professional services, or entertainment, you'll find it all here.</p>
 
-
+        </section>
+        <div class="list-grid-icons">
+            <button id="grid-btn" type="button">
+                <i class="fas fa-th-large"></i></button>
+        </div>
+        
+            <section id="comp-grid"></section>
+            <section id="comp-list"></section>
+            
     </main>
     <footer>
-        <section class="address">
-            <p>Manteca Chamber of Commerce</p>
-            <p>123 Main Street, Manteca, CA 95336</p>
-            <p>Email: info@mantecachamber.com</p>
-            <p>Phone: (209) 123-4567</p>
-        </section>
-        <section class="social-media">
-            <a href="https://www.facebook.com/mantecachamber" target="_blank">Facebook</a>
-            <a href="https://www.twitter.com/mantecachamber" target="_blank">Twitter</a>
-            <a href="https://www.instagram.com/mantecachamber" target="_blank">Instagram</a>
-        </section>
-        <section class="newsletter">
-            <h3>Subscribe to our Newsletter</h3>
+        <div class="footer-background">
+            <div class="footer-container">
+        <ul class="address">
+            <li>Manteca Chamber of Commerce<br>
+            123 Main Street, Manteca, CA 95336<br>
+            <a href="#"> info@mantecachamber.com</a><br>
+            Phone: (209) 123-4567
+            </li>
+        </ul>
+        <ul class="social-media">
+            <li> <i class="fab fa-facebook-f"></i> <a href="https://www.facebook.com/mantecachamber" target="_blank">Facebook</a></li>
+            <li> <i class="fab fa-twitter"></i> <a href="https://www.twitter.com/mantecachamber" target="_blank">Twitter</a></li>
+            <li> <i class="fab fa-instagram"></i> <a href="https://www.instagram.com/mantecachamber" target="_blank">Instagram</a></li>
+        </ul>
+        <ul class=" sec-credits">
+           <!-- <h3>Subscribe to our Newsletter</h3> 
             <form action="#" method="post">
                 <input type="email" name="email" placeholder="Enter your email" required>
                 <button type="submit">Subscribe</button>
-            </form>
-
-        </section>
+            </form> -->
+            <li> Maria Arroyo
+                WDD231 Web Development 1
+                <br>
+                BYU-Idaho
+            </li>
+            <li id="lastModified"></li>
+        </ul>
         <section class="credits">
             <li> WDD231 Web Development 1 | BYU-Idaho </li>
         </section>
