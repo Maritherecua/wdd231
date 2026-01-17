@@ -10,9 +10,9 @@
     <meta name="author" content="Maria Arroyo">
     <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
     <!--styles -->
-    <link rel="stylesheet" href="styles/normalize.css" media="screen">
-    <link rel="stylesheet" href="styles/directory.css" media="screen">
-    <link rel="stylesheet" href="styles/larger.css" media="screen">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/directory.css">
+    <link rel="stylesheet" href="larger.css">
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -30,7 +30,7 @@
         content="Explore the Manteca Chamber of Commerce directory to find local businesses, services, and resources in Manteca, CA. Connect with the community and support local enterprises.">
     <meta name="twitter:image" content="https://maritherecua.github.io/wdd231/chamber/images/hero.webp" />
     <!-- JavaScript -->
-     <script src="scripts/directory.js" defer></script>
+    <script src="scripts/directory.js" defer></script>
     <script src="scripts/lastmodified.js" defer></script>
     <script src="scripts/nav.js" defer></script>
 </head>
@@ -38,7 +38,7 @@
 <body>
     <header class="top-banner">
         <nav class="items-left">
-           <!--<div class="logo">
+            <!--<div class="logo">
                 <a href="index.html"><img src="images/logo.png" alt="Manteca Chamber of Commerce Logo"></a>
             
             <ul class="nav-links">
@@ -58,7 +58,7 @@
             <ul>
                 <li><a href="#">Contact Us</a></li>
             </ul>
-            </nav>
+        </nav>
     </header>
     <header>
         <div class="nav-container">
@@ -76,15 +76,17 @@
                     <li><a href="discover.html">Discover</a></li>
                 </ul>
             </nav>
-            </div>
+        </div>
     </header>
     <main>
         <section class="intro-msg-container">
             <h1>Business Directory</h1>
             <p>Welcome to the Manteca Chamber of Commerce directory. Here you can find a comprehensive list of local
                 businesses and services in Manteca, CA. Support our community by connecting with these enterprises!</p>
-                <br>
-            <p>Browse through our directory to discover the diverse range of businesses that make Manteca a vibrant community. Whether you're looking for dining, shopping, professional services, or entertainment, you'll find it all here.</p>
+            <br>
+            <p>Browse through our directory to discover the diverse range of businesses that make Manteca a vibrant
+                community. Whether you're looking for dining, shopping, professional services, or entertainment, you'll
+                find it all here.</p>
 
         </section>
         <div class="list-grid-icons">
@@ -93,54 +95,57 @@
             <button id="list-btn" type="button">
                 <i class="fas fa-list"></i></button>
         </div>
-        
-            <section id="comp-grid"></section>
-            <section id="comp-list"></section>
-            
+
+        <section id="comp-grid"></section>
+        <section id="comp-list"></section>
+
     </main>
     <footer>
         <div class="footer-background">
             <div class="footer-container">
-        <ul class="section-one">
-            <li>Manteca Chamber of Commerce<br>
-            123 Main Street, Manteca, CA 95336<br>
-            <a href="#"> info@mantecachamber.com</a><br>
-            Phone: (209) 123-4567
-            </li>
-        </ul>
-        <ul class="section-two">
-            <li> <i class="fab fa-facebook-f"></i> <a href="https://www.facebook.com/mantecachamber" target="_blank">Facebook</a></li>
-            <li> <i class="fab fa-twitter"></i> <a href="https://www.twitter.com/mantecachamber" target="_blank">Twitter</a></li>
-            <li> <i class="fab fa-instagram"></i> <a href="https://www.instagram.com/mantecachamber" target="_blank">Instagram</a></li>
-        </ul>
-        <ul class="section-three">
-           <!-- <h3>Subscribe to our Newsletter</h3> 
+                <ul class="section-one">
+                    <li>Manteca Chamber of Commerce<br>
+                        123 Main Street, Manteca, CA 95336<br>
+                        <a href="#"> info@mantecachamber.com</a><br>
+                        Phone: (209) 123-4567
+                    </li>
+                </ul>
+                <ul class="section-two">
+                    <li> <i class="fab fa-facebook-f"></i> <a href="https://www.facebook.com/mantecachamber"
+                            target="_blank">Facebook</a></li>
+                    <li> <i class="fab fa-twitter"></i> <a href="https://www.twitter.com/mantecachamber"
+                            target="_blank">Twitter</a></li>
+                    <li> <i class="fab fa-instagram"></i> <a href="https://www.instagram.com/mantecachamber"
+                            target="_blank">Instagram</a></li>
+                </ul>
+                <ul class="section-three">
+                    <!-- <h3>Subscribe to our Newsletter</h3> 
             <form action="#" method="post">
                 <input type="email" name="email" placeholder="Enter your email" required>
                 <button type="submit">Subscribe</button>
             </form> -->
-            <li> Maria Arroyo
-                WDD231 Web Development 1
-                <br>
-                BYU-Idaho
-            </li>
-            <li id="lastModified"></li>
-        </ul>
+                    <li> Maria Arroyo
+                        WDD231 Web Development 1
+                        <br>
+                        BYU-Idaho
+                    </li>
+                    <li id="lastModified"></li>
+                </ul>
             </div>
             <div class="footend-container">
                 <ul class="footer-end"></ul>
-     <!--  <section class="credits">
+                <!--  <section class="credits">
             <li> WDD231 Web Development 1 | BYU-Idaho </li>
         </section>
         <div class="copyright">
             &copy; <span id="current-year"></span> Maria Arroyo, Manteca,California, USA
         </div> -->
-        <div class="last-modified">
-            Last modified: <span id="last-modified-date"></span>
-        </div>
-        <ul>
-            <li><span id="current-year"></span> Manteca Chamber of Commerce. All rights reserved.</li>
-        </ul>
+                <div class="last-modified">
+                    Last modified: <span id="last-modified-date"></span>
+                </div>
+                <ul>
+                    <li><span id="current-year"></span> Manteca Chamber of Commerce. All rights reserved.</li>
+                </ul>
 
     </footer>
     <script>
