@@ -9,12 +9,12 @@
     .footer-container,
     .footer-container {
         margin: 0 auto;
-        max-width: 1200px
+        max-width: 1200px;
     }
 
     .items-left,
     .items-right {
-        display: flex
+        display: flex;
     }
 
     .top-banner {
@@ -26,17 +26,17 @@
         align-items: center;
         font-size: 14px;
         justify-content: space-between;
-        padding: 0 20px
+        padding: 0 20px;
     }
 
     .items-left ul,
     .items-right ul {
         display: flex;
-        gap: 6px
+        gap: 6px;
     }
 
     .items-right a {
-        color: #fff
+        color: #fff;
     }
 
     .nav-container {
@@ -75,11 +75,11 @@
     .nav-container .nav-links {
         display: flex;
         justify-content: flex-end;
-        background-color: #fff0
+        background-color: #fff0;
     }
 
     #icon-menu {
-        display: none
+        display: none;
     }
 
     .nav-container .nav-links ul {
@@ -87,12 +87,12 @@
         flex-direction: row;
         justify-content: flex-end;
         align-items: center;
-        gap: 20px
+        gap: 20px;
     }
 
     .nav-container .nav-links a {
         color: #1a1f8e;
-        font-weight: 600
+        font-weight: 600;
     }
 
     .nav-container .nav-links a.active {
@@ -102,24 +102,24 @@
 
     .nav-container span img {
         width: 180px;
-        height: auto
+        height: auto;
     }
 
     #comp-grid {
         display: grid;
         grid: auto/repeat(3, 1fr);
-        gap: 15px
+        gap: 15px;
     }
 
     .footer-background {
-        height: 300px
+        height: 300px;
     }
 
     .footer-container {
         flex-direction: row;
         justify-content: space-between;
         line-height: 22px;
-        padding-top: 5%
+        padding-top: 5%;
     }
 
     .sec-two {
@@ -130,15 +130,15 @@
 
     .sec-two i {
         font-size: 44px;
-        padding-right: 8px
+        padding-right: 8px;
     }
 
     .footer-end {
         flex-direction: row;
-        justify-content: space-between
+        justify-content: space-between;
     }
 
     .table-list {
-        grid: auto/repeat(4, 1fr)
+        grid: auto/repeat(4, 1fr);
     }
 }

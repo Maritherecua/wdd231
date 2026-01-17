@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Directory | Manteca Chamber of Commerce</title>
     <meta name="description"
-        content="Explore the Manteca Chamber of Commerce directory. Find local businesses, services, and resources in Manteca, CA. Support our community!">
+        content="Explore the Manteca Chamber of Commerce directory. Find local businesses, services, and resources in Manteca, CA.">
     <meta name="author" content="Maria Arroyo">
     <link rel="icon" href="images/favicon.webp" type="image/webp">
     <!--styles -->
@@ -20,9 +20,9 @@
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <!-- Open Graph Meta Tags (FaceBook social media)-->
-    <meta property="og:title" content="Directory | Manteca Chamber of Commerce">
+    <meta property="og:title" content="Directory | Manteca Chamber of Commerce website">
     <meta property="og:description"
-        content="Explore the Manteca Chamber of Commerce directory to find local businesses, services, and resources in Manteca, CA. Connect with the community and support local enterprises.">
+        content="Explore the Manteca Chamber of Commerce directory to find local businesses, services, and resources in Manteca, CA. Connect with the community.">
     <meta property="og:image" content="https://maritherecua.github.io/wdd231/chamber/images/hero.webp" />
     <meta property="og:url" content="https://maritherecua.github.io/wdd231/chamber">
     <!-- Twitter Card Meta Tags -->
@@ -38,32 +38,17 @@
 </head>
 
 <body>
-    <header class="top-banner">
-        <nav class="items-left">
-            <p>Manteca Chamber of Commerce</p>
-            <!--<div class="logo">
-                <a href="index.html"><img src="images/logo.png" alt="Manteca Chamber of Commerce Logo"></a>
-            
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="directory.html">Directory</a></li>
-                <li><a href="events.html">Events</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-            <ul>
-                <li> <i class="fa-brands fa-facebook"></i> </li>
-                <li> <i class="fa-brands fa-twitter"></i> </li>
-                <li> <i class="fa-brands fa-linkedin"></i> </li>
-            </ul>-->
-        </nav>
-        <nav class="items-right">
-            <ul>
-                <li><a href="contact.html">Contact Us</a></li>
-            </ul>
-        </nav>
-    </header>
     <header>
+        <div class="top-banner">
+            <nav class="items-left">
+                <p>Manteca Chamber of Commerce</p>
+            </nav>
+            <nav class="items-right">
+                <ul>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
         <div class="nav-container">
             <span>
                 <a href="index.html">
@@ -92,7 +77,6 @@
             <h1>Business Directory</h1>
             <p>Welcome to the Manteca Chamber of Commerce directory. Here you can find a comprehensive list of local
                 businesses and services in Manteca, CA. Support our community by connecting with these enterprises!</p>
-            <br>
             <p>Browse through our directory to discover the diverse range of businesses that make Manteca a vibrant
                 community. Whether you're looking for dining, shopping, professional services, or entertainment, you'll
                 find it all here.</p>
@@ -147,14 +131,8 @@
                     <li><span id="currentYear"></span> Manteca Chamber of Commerce. All rights reserved.</li>
                 </ul>
             </div>
-
+        </div>
     </footer>
-    <script>
-        const currentYearElement = document.getElementById('current-year');
-        if (currentYearElement) {
-            currentYearElement.textContent = new Date().getFullYear();
-        }
-    </script>
 </body>
 
 </html>

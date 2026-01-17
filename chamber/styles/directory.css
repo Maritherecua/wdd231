@@ -13,7 +13,7 @@
     --font-family: 'roboto', sans-serif;
     --font-size: 18px;
 
-    scroll-behavior: smooth
+    scroll-behavior: smooth;
 }
 
 h1,
@@ -118,8 +118,8 @@ a {
 }
 
 .nav-links a:hover {
-    color: var(--primary-color);
-    background-color: var(--secondary-color);
+    color: white;
+    background-color: var(--accent-color);
     transition: .5s ease;
 }
 
