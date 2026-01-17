@@ -10,16 +10,24 @@ let allCompanies = [];
 const url = "data/members.json"
 
 async function getCompanies() {
-    const response = await fetch(url); // fetch data from the url
-    const data = await response.json(); // convert the data to json
-    allCompanies = data.members;
+    try {
+        const response = await fetch(url); // fetch data from the url
+        if (!response.ok) {
+            throw new Error(`HTTP error! status: ${response.status}`);
+        }
+        const data = await response.json(); // convert the data to json
+        allCompanies = data.members;
 
-    displayGrid(allCompanies)
-    displayList(allCompanies)
+        displayGrid(allCompanies)
+        displayList(allCompanies)
 
-    // Set initial view to grid only
-    getCompanyList.style.display = "none";
-    getCompanyGrid.style.display = "grid";
+        // Set initial view to grid only
+        getCompanyList.style.display = "none";
+        getCompanyGrid.style.display = "grid";
+    } catch (error) {
+        console.error('Error loading members:', error);
+        getCompanyGrid.innerHTML = `<p style="text-align: center; padding: 20px;">Error loading members. Please refresh the page.</p>`;
+    }
 }
 getCompanies();
 
