@@ -5,36 +5,49 @@
     margin: 0;
     padding: 0;
 }
+
 :root {
-    --primary-color: #4CAF50;
-    --secondary-color: #FF9800;
-    --accent-color: #2196F3;
+    --primary-color: #048108;
+    --secondary-color: #76726c;
+    --accent-color: #0c2d49;
     --font-family: 'roboto', sans-serif;
     --font-size: 16px;
 
-    scroll-behavior:smooth
+    scroll-behavior: smooth
 }
-h1, h2, h3, h4, h5, h6 {
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: var(--font-family);
     font-size: var(--font-size);
     color: var(--primary-color);
 }
+
 li {
     list-style: none;
 }
+
 a {
     text-decoration: none;
     color: inherit;
 }
+
 .top-banner {
     width: 100%;
     height: 20px;
     background-color: var(--secondary-color);
 }
-.items-left, .items-right {
+
+.items-left,
+.items-right {
     display: none;
     align-items: center;
 }
+
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -42,19 +55,23 @@ a {
     padding: 10px 20px;
     background-color: var(--primary-color);
 }
+
 .navbar a {
     text-decoration: none;
     color: inherit;
 }
-.navbar > span img {
+
+.navbar>span img {
     height: 100%;
     width: auto;
     object-fit: contain;
 }
+
 #icon-menu {
     width: 30px;
     height: auto;
 }
+
 #icon-menu::before {
     content: '';
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -65,6 +82,7 @@ a {
     cursor: pointer;
     object-fit: contain;
 }
+
 #icon-menu.open::before {
     content: "\f00d";
 }
@@ -95,11 +113,17 @@ a {
     background-color: var(--secondary-color);
     transition: .5s ease;
 }
- 
+
 
 
 
 /* Styling for the nav display */
+
+.nav-container img {
+    height: 50px;
+    width: auto;
+    object-fit: contain;
+}
 
 .nav-container nav {
     display: grid;
@@ -163,7 +187,7 @@ a {
 
 
 /* Grrid and List view styling  */
-#comp-list .table-list:nth-of-type(even){
+#comp-list .table-list:nth-of-type(even) {
     background-color: var(--secondary-color);
 }
 
@@ -178,8 +202,8 @@ a {
 
 #comp-grid {
     padding: 18px 20px;
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr;
     gap: 20px;
 }
 
@@ -198,7 +222,7 @@ a {
     color: var(--primary-color);
 }
 
-#comp-grid div p:nth-of-type(1){
+#comp-grid div p:nth-of-type(1) {
     display: flex;
     justify-content: center;
 }

@@ -1,49 +1,54 @@
 {
     "members": [
-       { "company-name": "Shield Services Solutions Inc",
-        "address": "2417 Rockbrook Ln",
-        "phone": "555-1234",
-        "url": "http://shieldservicessolutionsinc.example.com",
+        {
+            "company-name": "Shield Services Solutions Inc",
+            "address": "2417 Rockbrook Ln",
+            "phone": "555-1234",
+            "url": "http://shieldservicessolutionsinc.example.com"
         },
-        {"company-name": "Steezy Strings LLC",
-        "address": "2448 Moscato Drive",
-        "phone": "555-5678",
-        "url": "http://steezystrings.example.com",
+        {
+            "company-name": "Steezy Strings LLC",
+            "address": "2448 Moscato Drive",
+            "phone": "555-5678",
+            "url": "http://steezystrings.example.com"
         },
-        {"company-name": "Sanam Transport Inc",
-        "address": "429 Villa Ticino Dr ",
-        "phone": "555-8765",
-        "url": "http://sanamtransport.example.com",
-
+        {
+            "company-name": "Sanam Transport Inc",
+            "address": "429 Villa Ticino Dr ",
+            "phone": "555-8765",
+            "url": "http://sanamtransport.example.com"
         },
-        {"company-name": "Medwynne Logistics LLC",
-        "address": "165 N Maple Ave",
-        "phone": "555-4321",
-        "url": "http://medwynnelogistics.example.com",
-        "image": "medwynne_logo.png",
-        "level": "Gold"
+        {
+            "company-name": "Medwynne Logistics LLC",
+            "address": "165 N Maple Ave",
+            "phone": "555-4321",
+            "url": "http://medwynnelogistics.example.com",
+            "image": "medwynne_logo.png",
+            "level": "Gold"
         },
-        {"company-name": "Tresa Missia LLC",
-        "address": "1528 Alyssa Place",
-        "phone": "555-6789",
-        "url": "http://tresamissia.example.com",
-        "image": "tresa_logo.png",
-        "level": "Silver"
+        {
+            "company-name": "Tresa Missia LLC",
+            "address": "1528 Alyssa Place",
+            "phone": "555-6789",
+            "url": "http://tresamissia.example.com",
+            "image": "tresa_logo.png",
+            "level": "Silver"
         },
-        {"company-name": "Cargodash Trans Inc",
-        "address": "1520 Parkview Street",
-        "phone": "555-9876",
-        "url": "http://cargodashtrans.example.com",
-        "image": "cargodash_logo.png",
-        "level": "Bronze"
+        {
+            "company-name": "Cargodash Trans Inc",
+            "address": "1520 Parkview Street",
+            "phone": "555-9876",
+            "url": "http://cargodashtrans.example.com",
+            "image": "cargodash_logo.png",
+            "level": "Bronze"
         },
-        {"company-name": "Creditboost LLC",
-        "address": "1676 La Scala Ln",
-        "phone": "555-5432",
-        "url": "http://creditboostllc.example.com",
-        "image": "creditboost_logo.png",
-        "level": "Bronze"
+        {
+            "company-name": "Creditboost LLC",
+            "address": "1676 La Scala Ln",
+            "phone": "555-5432",
+            "url": "http://creditboostllc.example.com",
+            "image": "creditboost_logo.png",
+            "level": "Bronze"
         }
-
     ]
 }
