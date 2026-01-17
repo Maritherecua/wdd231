@@ -136,6 +136,10 @@ a {
     object-fit: contain;
 }
 
+.social-icons {
+    display: none;
+}
+
 .nav-container nav {
     display: grid;
     grid-template-rows: 0fr;
