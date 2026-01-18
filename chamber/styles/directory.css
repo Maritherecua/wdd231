@@ -129,6 +129,7 @@ a {
     background-color: var(--primary-color);
     padding: 10px 20px;
     width: 100%;
+    color: white;
 }
 
 .nav-container>span {
