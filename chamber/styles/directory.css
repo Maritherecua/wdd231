@@ -314,6 +314,11 @@ footer {
     padding: 10px;
     min-height: 44px;
     min-width: 44px;
+    color: white;
+}
+
+.section-two a:hover {
+    color: #f0f0f0;
 }
 
 .section-two li {
