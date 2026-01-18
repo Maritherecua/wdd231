@@ -309,9 +309,25 @@ footer {
     font-size: 30px;
 }
 
+.section-two a {
+    display: inline-block;
+    padding: 10px;
+    min-height: 44px;
+    min-width: 44px;
+}
+
+.section-two li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
 .sec-one a {
     color: white;
     text-decoration: underline 2px white;
+    display: inline-block;
+    padding: 8px 4px;
+    min-height: 44px;
 }
 
 .sec-one a:hover {
