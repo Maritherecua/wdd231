@@ -325,6 +325,15 @@ footer {
     display: flex;
     align-items: center;
     gap: 10px;
+    color: white;
+}
+
+.section-one {
+    color: white;
+}
+
+.section-three {
+    color: white;
 }
 
 .sec-one {
