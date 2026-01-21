@@ -4,25 +4,28 @@
             "company-name": "Shield Services Solutions Inc",
             "address": "2417 Rockbrook Ln",
             "phone": "555-1234",
-            "url": "http://shieldservicessolutionsinc.example.com"
+            "url": "http://shieldservicessolutionsinc.example.com",
+            "level": "Gold"
         },
         {
             "company-name": "Steezy Strings LLC",
             "address": "2448 Moscato Drive",
             "phone": "555-5678",
-            "url": "http://steezystrings.example.com"
+            "url": "http://steezystrings.example.com",
+            "level": "Silver"
         },
         {
             "company-name": "Sanam Transport Inc",
             "address": "429 Villa Ticino Dr ",
             "phone": "555-8765",
-            "url": "http://sanamtransport.example.com"
+            "url": "http://sanamtransport.example.com",
+            "level": "Bronze"
         },
         {
             "company-name": "Medwynne Logistics LLC",
             "address": "165 N Maple Ave",
             "phone": "555-4321",
-            "url": "http://medwynnelogistics.example.com",
+            "url": "http://medwynnelogistics.com",
             "image": "medwynne_logo.png",
             "level": "Gold"
         },

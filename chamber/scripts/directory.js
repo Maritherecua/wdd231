@@ -53,7 +53,8 @@ function displayGrid(allCompanies) {
             <h1>${allCompany["company-name"]}</h1>
             <p>${allCompany.address}</p>
             <p>${allCompany.phone}</p>
-            <a href="${allCompany.url}" target="_blank" style="color:#2a7b48;">Visit Site</a>
+            <p><a href="${allCompany.url}" target="_blank" style="color:#2a7b48;">${allCompany.url}</a></p>
+            ${allCompany.level ? `<p>Membership: ${allCompany.level}</p>` : ''}
         `
         getCompanyGrid.appendChild(container);
     });
@@ -82,6 +83,7 @@ function displayList(allCompanies) {
             <div>${allCompany.address}</div>
             <div>${allCompany.phone}</div>
             <div><a href="${allCompany.url}" target="_blank">${allCompany.url}</a></div>
+            ${allCompany.level ? `<div>Membership: ${allCompany.level}</div>` : ''}
         `
         getCompanyList.appendChild(table);
 
