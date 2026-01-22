@@ -60,9 +60,6 @@ function displayGrid(allCompanies) {
     });
 }
 
-
-
-
 // Show list
 getListBtn.addEventListener("click", () => {
     getCompanyGrid.style.display = "none";
