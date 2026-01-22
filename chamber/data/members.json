@@ -5,6 +5,7 @@
             "address": "2417 Rockbrook Ln",
             "phone": "555-1234",
             "url": "http://shieldservicessolutionsinc.example.com",
+            "image": "shield_logo.png",
             "level": "Gold"
         },
         {
@@ -19,6 +20,7 @@
             "address": "429 Villa Ticino Dr ",
             "phone": "555-8765",
             "url": "http://sanamtransport.example.com",
+            "image": "sanam_logo.png",
             "level": "Bronze"
         },
         {
