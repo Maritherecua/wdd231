@@ -5,7 +5,7 @@
             "address": "2417 Rockbrook Ln",
             "phone": "555-1234",
             "url": "http://shieldservicessolutionsinc.example.com",
-            "image": "shield_logo.png",
+            "image": "shield_logo.webp",
             "level": "Gold"
         },
         {
@@ -13,7 +13,7 @@
             "address": "2448 Moscato Drive",
             "phone": "555-5678",
             "url": "http://steezystrings.example.com",
-            "image": "steezy_logo.png",
+            "image": "steezy_logo.webp",
             "level": "Silver"
         },
         {
@@ -21,7 +21,7 @@
             "address": "429 Villa Ticino Dr ",
             "phone": "555-8765",
             "url": "http://sanamtransport.example.com",
-            "image": "sanam_logo.png",
+            "image": "sanam_logo.webp",
             "level": "Bronze"
         },
         {
@@ -29,7 +29,7 @@
             "address": "165 N Maple Ave",
             "phone": "555-4321",
             "url": "http://medwynnelogistics.com",
-            "image": "medwynne_logo.png",
+            "image": "medwynne_logo.webp",
             "level": "Gold"
         },
         {
@@ -37,7 +37,7 @@
             "address": "1528 Alyssa Place",
             "phone": "555-6789",
             "url": "http://tresamissia.example.com",
-            "image": "tresa_logo.png",
+            "image": "tresa_logo.webp",
             "level": "Silver"
         },
         {
@@ -45,7 +45,7 @@
             "address": "1520 Parkview Street",
             "phone": "555-9876",
             "url": "http://cargodashtrans.example.com",
-            "image": "cargodash_logo.png",
+            "image": "cargodash_logo.webp",
             "level": "Bronze"
         },
         {
@@ -53,7 +53,7 @@
             "address": "1676 La Scala Ln",
             "phone": "555-5432",
             "url": "http://creditboostllc.example.com",
-            "image": "creditboost_logo.png",
+            "image": "creditboost_logo.webp",
             "level": "Bronze"
         },
         {
@@ -61,7 +61,7 @@
             "address": "123 Innovation Drive",
             "phone": "555-1122",
             "url": "http://nextgensolutions.example.com",
-            "image": "nextgen_logo.png",
+            "image": "nextgen_logo.webp",
             "level": "Gold"
         }
     ]
