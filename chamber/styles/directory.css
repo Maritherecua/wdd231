@@ -258,6 +258,7 @@ a {
     border-radius: 5px;
     box-shadow: 5px 5px var(--primary-color);
     width: 100%;
+    min-height: 280px;
 }
 
 #comp-grid div h1 {

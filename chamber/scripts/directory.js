@@ -47,14 +47,13 @@ function displayGrid(allCompanies) {
 
     allCompanies.forEach(allCompany => {
         let container = document.createElement("div");
-        container.setAttribute("style", "width: 100%; height: 292px;");
 
         container.innerHTML = `
-            ${allCompany.image ? `<img src="images/${allCompany.image}" alt="${allCompany["company-name"]} logo" loading="lazy" width="100" height="100" style="display: block; margin: 0 auto;">` : ''}
+            ${allCompany.image ? `<img src="images/${allCompany.image}" alt="${allCompany["company-name"]} logo" loading="lazy" width="200" height="200" style="display: block; margin: 0 auto; object-fit: contain; max-width: 100%;">` : ''}
             <h1>${allCompany["company-name"]}</h1>
             <p>${allCompany.address}</p>
             <p>${allCompany.phone}</p>
-            <p><a href="${allCompany.url}" target="_blank" style="color:#2a7b48;">${allCompany.url}</a></p>
+            <p><a href="${allCompany.url}" target="_blank" style="color:#045241;">${allCompany.url}</a></p>
             ${allCompany.level ? `<p>Membership: ${allCompany.level}</p>` : ''}
         `
         getCompanyGrid.appendChild(container);
@@ -80,7 +79,7 @@ function displayList(allCompanies) {
         table.classList.add("table-list");
 
         table.innerHTML = `
-            ${allCompany.image ? `<div><img src="images/${allCompany.image}" alt="${allCompany["company-name"]} logo" loading="lazy" width="50" height="50" style="display: block; margin: 0 auto;"></div>` : ''}
+            ${allCompany.image ? `<div><img src="images/${allCompany.image}" alt="${allCompany["company-name"]} logo" loading="lazy" width="100" height="100" style="display: block; margin: 0 auto; object-fit: contain; max-width: 100%;"></div>` : ''}
             <div>${allCompany["company-name"]}</div>
             <div>${allCompany.address}</div>
             <div>${allCompany.phone}</div>
