@@ -13,6 +13,7 @@
             "address": "2448 Moscato Drive",
             "phone": "555-5678",
             "url": "http://steezystrings.example.com",
+            "image": "steezy_logo.png",
             "level": "Silver"
         },
         {
@@ -54,6 +55,14 @@
             "url": "http://creditboostllc.example.com",
             "image": "creditboost_logo.png",
             "level": "Bronze"
+        },
+        {
+            "company-name": "NextGen Solutions",
+            "address": "123 Innovation Drive",
+            "phone": "555-1122",
+            "url": "http://nextgensolutions.example.com",
+            "image": "nextgen_logo.png",
+            "level": "Gold"
         }
     ]
 }

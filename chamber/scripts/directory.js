@@ -50,6 +50,7 @@ function displayGrid(allCompanies) {
         container.setAttribute("style", "width: 100%; height: 292px;");
 
         container.innerHTML = `
+            ${allCompany.image ? `<img src="images/${allCompany.image}" alt="${allCompany["company-name"]} logo" loading="lazy" width="100" height="100" style="display: block; margin: 0 auto;">` : ''}
             <h1>${allCompany["company-name"]}</h1>
             <p>${allCompany.address}</p>
             <p>${allCompany.phone}</p>
@@ -79,6 +80,7 @@ function displayList(allCompanies) {
         table.classList.add("table-list");
 
         table.innerHTML = `
+            ${allCompany.image ? `<div><img src="images/${allCompany.image}" alt="${allCompany["company-name"]} logo" loading="lazy" width="50" height="50" style="display: block; margin: 0 auto;"></div>` : ''}
             <div>${allCompany["company-name"]}</div>
             <div>${allCompany.address}</div>
             <div>${allCompany.phone}</div>
