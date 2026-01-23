@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -13,7 +12,7 @@
     <!--styles -->
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
-    <link rel="stylesheet" href="styles">
+    <link rel="stylesheet" href="styles/index.css" media="screen">
     <link rel="stylesheet" href="larger.css">
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -26,7 +25,7 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     </noscript>
     <!-- Open Graph Meta Tags (FaceBook social media)-->
-    <meta property="og:title" content="home Page | Manteca Chamber of Commerce website">
+    <meta property="og:title" content="Home Page | Manteca Chamber of Commerce website">
     <meta property="og:description"
         content="Explore the Manteca Chamber of Commerce to find local businesses, services, and resources in Manteca, CA. Connect with the community.">
     <meta property="og:image" content="https://maritherecua.github.io/wdd231/chamber/images/hero.webp" />
@@ -78,30 +77,31 @@
             </nav>
         </div>
     </header>
-    <section    id="home-section">
-        <section class="hero-container">
-            <img src="images/hero.webp" alt="Manteca hero image" width="1500" height="350">
-            <a href="join.html" class="hero-cta">Join Now</a>
-            
-        </section>
-        <h1>Home</h1>
-        <p>Welcome to the Manteca Chamber of Commerce.</p>
-        <div class="home-container">
-            <h2>Events</h2>
-            
-        </div>
+    <main>
+        <section id="home-section">
+            <section id="hero-container">
+                <img src="images/hero.webp" alt="Manteca hero image" width="1500" height="350">
+                <a href="join.html" class="hero-cta">Join Now</a>
 
-        <div class="weather">
-            <h2 id="cityWeather">CurrentWeather</h2>
-             <div>
+            </section>
+            <h1>Home</h1>
+            <p>Welcome to the Manteca Chamber of Commerce.</p>
+            <div class="home-container">
+                <h2>Events</h2>
+
+            </div>
+
+            <div class="weather">
+                <h2 id="cityWeather">CurrentWeather</h2>
+                <div>
                     <img id="weather-icon" src="#" alt="weather-icon" width="50" height="50">
                     <span id="report"></span>
                 </div>
-        </div>
-        <div>
-            <h2>Forecast</h2>
-            <span id="forecast"></span>
-        </div>
+            </div>
+            <div>
+                <h2>Forecast</h2>
+                <span id="forecast"></span>
+            </div>
         </section>
         <div id="companies-container">
 
@@ -152,9 +152,4 @@
     </footer>
 </body>
 
-</html>
-</head>
-<body>
-    
-</body>
 </html>
