@@ -1,0 +1,25 @@
+
+body {
+    font-family: "Gill Sans MT", sans-serif;
+    font-size: 18px;
+    text-align: center;
+}
+
+main {
+    padding: 15px;
+    border: 1px grey solid;
+    width: 400px;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 5px;
+    background-color: rgb(189, 228, 241);
+    color: rgb(62, 62, 255);
+}
+
+figcaption {
+    text-transform: capitalize;
+}
+
+footer {
+    margin-top: 20px;
+}
