@@ -88,26 +88,33 @@
             </section>
             <h1>Home</h1>
             <p>Welcome to the Manteca Chamber of Commerce.</p>
-            <div id="home-container">
-                <h2>Events</h2>
 
-            </div>
+            <div id="grid-container">
+                <!-- Row 1: Events, Weather, Forecast -->
+                <div id="events-section" class="events">
+                    <h2>Events</h2>
+                </div>
 
-            <div class="weather">
-                <h2 id="cityWeather">CurrentWeather</h2>
-                <div>
-                    <img id="weather-icon" src="#" alt="weather-icon" width="50" height="50">
-                    <span id="report"></span>
+                <div id="weather-section" class="weather">
+                    <h2>Current Weather</h2>
+                    <div>
+                        <img id="weather-icon" src="#" alt="weather-icon" width="50" height="50">
+                        <span id="report"></span>
+                    </div>
+                </div>
+
+                <div id="forecast-section" class="forecast">
+                    <h2>Forecast</h2>
+                    <span id="forecast"></span>
+                </div>
+
+                <!-- Row 2: Three Spotlight Companies -->
+                <h2 style="grid-column: 1 / -1; margin: 20px 0 10px 0; color: var(--primary-color);">Business Spotlight
+                </h2>
+                <div id="spotlight-container" class="spotlight-row">
                 </div>
             </div>
-            <div>
-                <h2>Forecast</h2>
-                <span id="forecast"></span>
-            </div>
         </section>
-        <div id="companies-container">
-
-        </div>
 
 
     </main>

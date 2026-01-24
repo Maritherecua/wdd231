@@ -337,48 +337,134 @@ main h2 {
 main p {
     margin: 0.5rem 10px;
     color: #333;
-
 }
 
 main a {
     color: var(--primary-color);
 }
 
-/* Events and weather section styling */
-.events {
-    margin: 0.5rem 10px;
+/* Grid Container - 3 columns layout */
+#grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    padding: 20px 10px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-.events div {
+#events-section {
+    grid-column: 1;
+    order: 1;
+}
 
+#weather-section {
+    grid-column: 2;
+    order: 1;
+}
+
+#forecast-section {
+    grid-column: 3;
+    order: 1;
+}
+
+#spotlight-container {
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    order: 2;
+}
+
+/* Events and weather section styling */
+.events {
+    margin: 0;
     background-color: var(--color-mygrey-05);
     border: 1px solid var(--color-mygrey-10);
-    margin-bottom: 1rem;
     border-radius: 10px;
     overflow: hidden;
+    padding: 10px;
 }
 
 .events h2 {
     background-color: var(--color-mygrey-10);
+    font-size: 0.95rem;
+    margin: 0;
+    padding: 5px;
 }
 
 div.events p {
-    margin: 0.75rem 10px;
+    margin: 3px 0;
+    font-size: 0.85rem;
+}
+
+/* Visit button styling for company cards */
+.visit-btn {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 10px 20px;
+    margin: 10px auto;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+    min-height: 44px;
+    min-width: 44px;
+    text-align: center;
+}
+
+.visit-btn:hover {
+    background-color: var(--accent-color);
+}
+
+div.weather {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-mygrey-05);
+    border: 1px solid var(--color-mygrey-10);
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 10px;
+}
+
+div.weather h2 {
+    font-size: 0.95rem;
+    margin: 0 0 5px 0;
+    padding: 0;
 }
 
 div.weather div {
     display: flex;
+    flex-direction: column;
+    gap: 3px;
 }
 
 div.weather p {
-    margin: 0.2rem 0;
-    font-size: 0.85rem;
+    margin: 0;
+    font-size: 0.8rem;
     color: var(--color-accent);
 }
 
+.forecast {
+    background-color: var(--color-mygrey-05);
+    border: 1px solid var(--color-mygrey-10);
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 10px;
+}
+
+.forecast h2 {
+    font-size: 0.95rem;
+    margin: 0 0 5px 0;
+    padding: 0;
+}
+
 #forecast p {
-    margin: 0.5rem 10px;
+    margin: 2px 0;
     font-family: Verdana, sans-serif;
+    color: var(--color-mygrey-70);
+    font-size: 0.8rem;
     color: var(--color-mygrey-70);
 }
 
