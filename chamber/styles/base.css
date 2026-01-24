@@ -280,10 +280,92 @@ a {
     padding: 10px;
     justify-content: space-evenly;
 }
+/*Home section styling*/
+main h1 {
+    margin: 0.5rem 10px;
+    color: var(--primary-color);
+}
+main h2 {
+    margin:0;
+    padding:0.5rem 10px;
+    color: var(--primary-color)
+}
+main p {
+    margin: 0.5rem 10px;
+    color: #333;
 
+}
+main a {
+    color: var(--primary-color);
+}
+/* Events and weather section styling */
+.events {
+    margin: 0.5rem 10px;
+}
+.events div {
 
-
-
+    background-color: var(--color-mygrey-05);
+  border: 1px solid var(--color-mygrey-10);
+  margin-bottom: 1rem;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.events h2 {
+  background-color: var(--color-mygrey-10);
+}
+div.events p {
+  margin: 0.75rem 10px;
+}
+div.weather div {
+  display: flex;
+}
+div.weather p {
+  margin: 0.2rem 0;
+  font-size: 0.85rem;
+  color: var(--color-accent);
+}
+#forecast p {
+  margin: 0.5rem 10px;
+  font-family: Verdana, sans-serif;
+  color: var(--color-mygrey-70);
+}
+/* Home page spotlight section styling */
+#spotlight div {
+  background-color: var(--color-mygrey-05);
+  text-align: center;
+  border: 1px solid var(--color-mygrey-10);
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 10px;
+}
+#spotlight h2 {
+  background-color: var(--color-mygrey-20);
+  padding: 0.3rem 0;
+  font-size: 1.1rem;
+  color: var(--color-mygrey-80);
+}
+#spotlight p {
+  margin: 0;
+  padding: 0.5rem;
+}
+#spotlight img {
+  width: 100%;
+  height: auto;
+}
+#spotlight a {
+  display: block;
+  padding: 0.5rem 0;
+  margin: 0.5rem 1rem;
+  color: var(--color-mygrey-05);
+  font-weight: 800;
+  font-size: 1.2rem;
+  text-decoration: none;
+  border-radius: 99px;
+  background-color: var(--color-primary);
+}
+#spotlight a:hover {
+  background-color: var(--color-accent);
+} 
 
 footer {
     margin-top: 50px;
@@ -357,12 +439,10 @@ footer {
     padding: 8px 4px;
     min-height: 44px;
 }
-
 .sec-one a:hover {
     text-decoration: underline 2px white;
     color: #f0f0f0;
 }
-
 
 .footend-container {
     background-color: black;
@@ -370,17 +450,14 @@ footer {
     width: 100%;
     height: auto;
 }
-
 .footend-container ul {
     text-align: center;
     padding: 15px;
     list-style: none;
 }
-
 .footend-container li {
     text-align: center;
 }
-
 .footer-end {
     padding: 20px;
     display: flex;
