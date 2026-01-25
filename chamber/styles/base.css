@@ -13,6 +13,7 @@
     --white: white;
     --light-grey: #f0f0f0;
     --dark-grey: #333;
+    --dark-text: #1a1a1a;
     --black: black;
 
     --color-mygrey-05: lab(95% 0 0);
@@ -155,7 +156,8 @@ nav ul {
 
 .nav-links a.active {
     background-color: var(--accent-color);
-    text-decoration: 2px white underline;
+    color: var(--dark-text);
+    text-decoration: 2px var(--dark-text) underline;
 }
 
 .nav-links ul li {
