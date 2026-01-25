@@ -335,6 +335,7 @@ nav ul {
 main h1 {
     margin: 0.5rem 10px;
     color: var(--primary-color);
+    font-size: 1.3rem;
 }
 
 main h2 {
@@ -347,7 +348,7 @@ main p {
     margin: 0.5rem 10px;
     color: var(--dark-grey);
     text-align: center;
-    font-size: 0.9rem;
+    font-size: 1.3rem;
 }
 
 main a {
@@ -407,14 +408,14 @@ div.weather,
 /* Events and weather section styling */
 .events h2 {
     background-color: transparent;
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     color: var(--primary-color);
     margin: 0;
     padding: 5px;
 }
 
 .events h3 {
-    font-size: 1rem;
+    font-size: 1.2rem;
     color: var(--primary-color);
     margin: 5px 0 2px 0;
     font-weight: 600;
@@ -422,7 +423,7 @@ div.weather,
 
 div.events p {
     margin: 2px 0;
-    font-size: 0.9rem;
+    font-size: 1rem;
 }
 
 /* Visit button styling for company cards */
@@ -478,7 +479,7 @@ div.weather p {
 }
 
 .forecast h2 {
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     margin: 0 0 5px 0;
     padding: 0;
     color: var(--primary-color);
