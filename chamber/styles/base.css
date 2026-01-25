@@ -399,6 +399,13 @@ main a {
     padding: 5px;
 }
 
+.events h3 {
+    font-size: 1rem;
+    color: var(--primary-color);
+    margin: 5px 0 2px 0;
+    font-weight: 600;
+}
+
 div.events p {
     margin: 2px 0;
     font-size: 0.9rem;
