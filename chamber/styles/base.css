@@ -271,7 +271,7 @@ nav ul {
 
 .list-grid-icons button:hover {
     border: var(--primary-color) solid .5px;
-    background-color: rgb(86, 77, 77);
+    background-color: var(--dark-grey);
     transition: .5s ease;
 
 }
@@ -343,7 +343,7 @@ main h2 {
 
 main p {
     margin: 0.5rem 10px;
-    color: #333;
+    color: var(--dark-grey);
     text-align: center;
     font-size: 0.9rem;
 }
