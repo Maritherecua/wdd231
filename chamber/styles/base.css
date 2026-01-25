@@ -10,7 +10,10 @@
     --primary-color: #1a1f8e;
     --accent-color: #008b94;
     --secondary-color: #cfddd5;
-
+    --white: white;
+    --light-grey: #f0f0f0;
+    --dark-grey: #333;
+    --black: black;
 
     --color-mygrey-05: lab(95% 0 0);
     --color-mygrey-10: lab(90% 0 0);
@@ -128,7 +131,7 @@ nav ul {
     height: 100%;
     cursor: pointer;
     object-fit: contain;
-    color: white;
+    color: var(--white);
 }
 
 #icon-menu.open::before {
@@ -142,7 +145,7 @@ nav ul {
 }
 
 .nav-links a {
-    color: white;
+    color: var(--white);
     padding: 12px 16px;
     border-radius: 10px;
     display: inline-block;
@@ -161,7 +164,7 @@ nav ul {
 }
 
 .nav-links a:hover {
-    color: white;
+    color: var(--white);
     background-color: var(--accent-color);
     transition: .5s ease;
 }
@@ -388,9 +391,10 @@ main a {
     order: 1;
 }
 
-/* Events and weather section styling */
-.events {
-    margin: 0;
+/* Card styling - shared by events, weather, forecast */
+.events,
+div.weather,
+.forecast {
     background-color: var(--color-mygrey-05);
     border: 1px solid var(--color-mygrey-10);
     border-radius: 10px;
@@ -398,6 +402,7 @@ main a {
     padding: 10px;
 }
 
+/* Events and weather section styling */
 .events h2 {
     background-color: transparent;
     font-size: 1.4rem;
@@ -470,18 +475,11 @@ div.weather p {
     color: var(--color-accent);
 }
 
-.forecast {
-    background-color: var(--color-mygrey-05);
-    border: 1px solid var(--color-mygrey-10);
-    border-radius: 10px;
-    overflow: hidden;
-    padding: 10px;
-}
-
 .forecast h2 {
     font-size: 1.4rem;
     margin: 0 0 5px 0;
     padding: 0;
+    color: var(--primary-color);
 }
 
 #forecast p {
@@ -572,53 +570,41 @@ footer {
     font-size: 30px;
 }
 
+.section-one,
+.section-three,
+.section-two li,
+footer {
+    color: var(--white);
+}
+
 .section-two a {
     display: inline-block;
     padding: 10px;
     min-height: 44px;
     min-width: 44px;
-    color: white;
-}
-
-.section-two a:hover {
-    color: #f0f0f0;
-}
-
-.section-two li {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    color: white;
-}
-
-.section-one {
-    color: white;
-}
-
-.section-three {
-    color: white;
+    color: var(--white);
 }
 
 .sec-one {
-    color: white;
+    color: var(--white);
 }
 
 .sec-one a {
-    color: white;
-    text-decoration: underline 2px white;
+    color: var(--white);
+    text-decoration: underline 2px var(--white);
     display: inline-block;
     padding: 8px 4px;
     min-height: 44px;
 }
 
 .sec-one a:hover {
-    text-decoration: underline 2px white;
-    color: #f0f0f0;
+    text-decoration: underline 2px var(--white);
+    color: var(--light-grey);
 }
 
 .footend-container {
-    background-color: black;
-    color: white;
+    background-color: var(--black);
+    color: var(--white);
     width: 100%;
     height: auto;
 }
