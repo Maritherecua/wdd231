@@ -64,7 +64,7 @@ header span:first-child {
 }
 
 header span:nth-child(2) {
-    font-size: 0.75rem;
+    font-size: 1.2rem;
 }
 
 /* NAVIGATION STYLING **/
