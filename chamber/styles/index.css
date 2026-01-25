@@ -56,7 +56,6 @@
 #home-container .events,
 .cWeather,
 .wForecast {
-    background-color: aqua;
     background-color: var(--secondary-color);
     border-radius: 10px;
     height: 150px;
