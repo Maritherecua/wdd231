@@ -5,8 +5,9 @@ async function displayMembers() {
         const data = await response.json();
         const spotlightContainer = document.getElementById('spotlight-container');
 
-        // Get 3 random companies for spotlight
-        const randomMembers = data.members.sort(() => 0.5 - Math.random()).slice(0, 3);
+        // Get 3 random gold or silver companies for spotlight
+        const goldSilverMembers = data.members.filter(member => member.level.toLowerCase() === 'gold' || member.level.toLowerCase() === 'silver');
+        const randomMembers = goldSilverMembers.sort(() => 0.5 - Math.random()).slice(0, 3);
 
         // Display each spotlight member
         randomMembers.forEach(member => {

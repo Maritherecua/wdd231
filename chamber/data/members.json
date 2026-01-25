@@ -38,7 +38,7 @@
             "phone": "555-6789",
             "url": "http://tresamissia.example.com",
             "image": "tresa_logo.webp",
-            "level": "Silver"
+            "level": "Bronze"
         },
         {
             "company-name": "Cargodash Trans Inc",
@@ -46,7 +46,7 @@
             "phone": "555-9876",
             "url": "http://cargodashtrans.example.com",
             "image": "cargodash_logo.webp",
-            "level": "Bronze"
+            "level": "Silver"
         },
         {
             "company-name": "Creditboost LLC",
@@ -54,7 +54,7 @@
             "phone": "555-5432",
             "url": "http://creditboostllc.example.com",
             "image": "creditboost_logo.webp",
-            "level": "Bronze"
+            "level": "Gold"
         },
         {
             "company-name": "NextGen Solutions",
