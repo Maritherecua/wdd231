@@ -292,7 +292,6 @@ nav ul {
     gap: 20px;
     min-height: 500px;
     content-visibility: auto;
-    contain-intrinsic-size: 0 500px;
 }
 
 #comp-grid div {
