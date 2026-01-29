@@ -116,6 +116,11 @@
         grid: auto/repeat(3, 1fr);
         gap: 15px;
     }
+    /*Join our community section*/
+    .sbs {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
 
     .footer-background {
         height: 300px;
