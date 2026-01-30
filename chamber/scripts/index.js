@@ -5,6 +5,8 @@ async function displayMembers() {
         const data = await response.json();
         const spotlightContainer = document.getElementById('spotlight-container');
 
+        if (!spotlightContainer) return;
+
         // Get 3 random gold or silver companies for spotlight
         const goldSilverMembers = data.members.filter(member => member.level.toLowerCase() === 'gold' || member.level.toLowerCase() === 'silver');
         const randomMembers = goldSilverMembers.sort(() => 0.5 - Math.random()).slice(0, 3);
