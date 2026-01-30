@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Manteca Chamber of Commerce</title>
-    <meta name="description" content="Join the Manteca Chamber of Commerce to connect with local businesses and community leaders.">
+    <meta name="description"
+        content="Join the Manteca Chamber of Commerce to connect with local businesses and community leaders.">
     <meta name="author" content="Maria Arroyo">
     <link rel="icon" href="images/favicon.webp" type="image/webp">
     <!--styles -->
@@ -43,8 +45,9 @@
     <script src="scripts/formdata.js" defer></script>
     <script src="scripts/levels.js" defer></script>
 </head>
+
 <body>
-     <header>
+    <header>
         <div class="top-banner">
             <nav class="items-left">
                 <p>Manteca Chamber of Commerce</p>
@@ -80,65 +83,72 @@
     </header>
     <main>
         <h1>Join</h1>
+        <p>Become a member of the Manteca Chamber of Commerce today and grow your business network.</p>
         <section id="join-section">
-           <p>Become a member of the Manteca Chamber of Commerce today and grow your business network.</p>
-        <h2>Membership Application Form</h2>
-    <form method="GET" action="thankyou.html" class="designOne">
-        <label>First Name <input type="text" name="first" required autocomplete="given-name" title="Your First Name"></label>
-        <label>Last Name <input type="text" name="last" required autocomplete="family-name" title="Your Last Name"></label>
-        <label>Title <input type="text" name="title" autocomplete="organization-title" title="Your Title" pattern="[a-zA-Z0-9 -]{7,}"></label>
-        <label>Email <input type="email" name="email" required placeholder="someone@gmail.com"  title="Your Email" autocomplete="email"></label>
-        <label>Cell Phone <input type="tel" name="phone" required autocomplete="tel" title="A Phone Number with dashes" placeholder="209-777-1234" ></label>
-        <label>Organization <input type="text" name="organization" required  title="organization" autocomplete="organization"></label>
-        <label>Business Decription<textarea name="description" title="description"></textarea></label>
-    
-    
-        <h3>Membership Level</h3>
-        <label><input type="radio" name="level" value="np"> Non Profit Membership</label>
-        <label><input type="radio" name="level" value="bronze" checked> Bronze Membership</label>
-        <label><input type="radio" name="level" value="silver"> Silver Membership</label>
-        <label><input type="radio" name="level" value="gold"> Gold Membership</label>
-    
-    
-        <input type="submit" value="Apply for Membership">
-        <input type="hidden" name="hiddendate" id="today">
-    </form>
-</section>
-
-<section class="mslvl">
-    <h2>Membership Levels</h2>
-    <!-- Non Profit level -->
-    <aside>
-        <h3>Non Profit Membership Level</h3>
-        <button id="ml1Btn">Learn More</button>
-    </aside>
-    <aside>
-        <h3>Bronze Membership Level</h3>
-        <button id="ml2Btn">Learn More</button>
-    </aside>
-    <aside>
-        <h3>Silver Membership Level</h3>
-        <button id="ml3Btn">Learn More</button>
-    </aside>
-    <aside>
-        <h3>Gold Membership Level</h3>
-        <button id="ml4Btn">Learn More</button>
-    </aside>
-        <dialog id="mlModal">
             <div>
-            <h4 id="mltitle"></h4>
-            <button id="closeModal">X</button>
+                <h2>Membership Application Form</h2>
+                <form method="GET" action="thankyou.html" class="designOne">
+                    <label>First Name <input type="text" name="first" required autocomplete="given-name"
+                            title="Your First Name"></label>
+                    <label>Last Name <input type="text" name="last" required autocomplete="family-name"
+                            title="Your Last Name"></label>
+                    <label>Title <input type="text" name="title" autocomplete="organization-title" title="Your Title"
+                            pattern="[a-zA-Z0-9 -]{7,}"></label>
+                    <label>Email <input type="email" name="email" required placeholder="someone@gmail.com"
+                            title="Your Email" autocomplete="email"></label>
+                    <label>Cell Phone <input type="tel" name="phone" required autocomplete="tel"
+                            title="A Phone Number with dashes" placeholder="209-777-1234"></label>
+                    <label>Organization <input type="text" name="organization" required title="organization"
+                            autocomplete="organization"></label>
+                    <label>Business Decription<textarea name="description" title="description"></textarea></label>
+
+
+                    <h3>Membership Level</h3>
+                    <label><input type="radio" name="level" value="np"> Non Profit Membership</label>
+                    <label><input type="radio" name="level" value="bronze" checked> Bronze Membership</label>
+                    <label><input type="radio" name="level" value="silver"> Silver Membership</label>
+                    <label><input type="radio" name="level" value="gold"> Gold Membership</label>
+
+
+                    <input type="submit" value="Apply for Membership">
+                    <input type="hidden" name="hiddendate" id="today">
+                </form>
             </div>
-            <span id="mldetails"></span>
-        </dialog>
-    
-</section>
-</div>
+
+            <div class="mslvl">
+                <h2>Membership Levels</h2>
+                <!-- Non Profit level -->
+                <aside>
+                    <h3>Non Profit Membership Level</h3>
+                    <button id="ml1Btn">Learn More</button>
+                </aside>
+                <aside>
+                    <h3>Bronze Membership Level</h3>
+                    <button id="ml2Btn">Learn More</button>
+                </aside>
+                <aside>
+                    <h3>Silver Membership Level</h3>
+                    <button id="ml3Btn">Learn More</button>
+                </aside>
+                <aside>
+                    <h3>Gold Membership Level</h3>
+                    <button id="ml4Btn">Learn More</button>
+                </aside>
+                <dialog id="mlModal">
+                    <div>
+                        <h4 id="mltitle"></h4>
+                        <button id="closeModal">X</button>
+                    </div>
+                    <span id="mldetails"></span>
+                </dialog>
+
+            </div>
+        </section>
 
 
-      
+
     </main>
-     <footer>
+    <footer>
         <div class="footer-background">
             <div class="footer-container">
                 <ul class="section-one">
@@ -178,6 +188,7 @@
                 </ul>
             </div>
         </div>
-    </footer>            
+    </footer>
 </body>
+
 </html>

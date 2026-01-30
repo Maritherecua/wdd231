@@ -7,7 +7,8 @@
     #comp-list,
     .footer-end,
     .footer-container,
-    .footer-container {
+    .footer-container,
+    #join-section {
         margin: 0 auto;
         max-width: 1200px;
     }
@@ -116,10 +117,18 @@
         grid: auto/repeat(3, 1fr);
         gap: 15px;
     }
+
     /*Join our community page*/
     .sbs {
         display: grid;
         grid-template-columns: 1fr 1fr;
+    }
+
+    #join-section {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+        align-items: start;
     }
 
     .footer-background {

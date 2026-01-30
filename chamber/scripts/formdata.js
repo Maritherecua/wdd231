@@ -1,6 +1,12 @@
 const myInfo = new URLSearchParams(window.location.search);
 console.log(myInfo);
 
+// Set timestamp when form loads
+document.addEventListener('DOMContentLoaded', function () {
+    const now = new Date();
+    document.querySelector('#today').value = now.toLocaleString();
+});
+
 console.log(myInfo.get('first'));
 console.log(myInfo.get('last'));
 console.log(myInfo.get('title'));
