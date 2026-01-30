@@ -3,8 +3,11 @@ console.log(myInfo);
 
 // Set timestamp when form loads
 document.addEventListener('DOMContentLoaded', function () {
-    const now = new Date();
-    document.querySelector('#today').value = now.toLocaleString();
+    const todayField = document.querySelector('#today');
+    if (todayField) {
+        const now = new Date();
+        todayField.value = now.toLocaleString();
+    }
 });
 
 console.log(myInfo.get('first'));
@@ -18,9 +21,12 @@ console.log(myInfo.get('description'));
 
 
 //build the message
-document.querySelector('#results').innerHTML = `
-    <p>Application submission from ${myInfo.get('first')} ${myInfo.get('last')}</p>
-    <p>The ${myInfo.get('title')} of ${myInfo.get('organization')}
-    <p><p> Phone: ${myInfo.get('phone')} </p>
-    <p>Email: ${myInfo.get('email')}</p>
-    <p>Business Description: ${myInfo.get('description')}</p>`
+const resultsElement = document.querySelector('#results');
+if (resultsElement) {
+    resultsElement.innerHTML = `
+        <p>Application submission from ${myInfo.get('first')} ${myInfo.get('last')}</p>
+        <p>The ${myInfo.get('title')} of ${myInfo.get('organization')}
+        <p><p> Phone: ${myInfo.get('phone')} </p>
+        <p>Email: ${myInfo.get('email')}</p>
+        <p>Business Description: ${myInfo.get('description')}</p>`;
+}

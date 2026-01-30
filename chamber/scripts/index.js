@@ -37,6 +37,8 @@ async function displayMembers() {
 // Display sample events
 function displayEvents() {
     const eventsSection = document.getElementById('events-section');
+    if (!eventsSection) return;
+
     const events = [
         {
             title: 'Monthly Networking Breakfast',
@@ -66,6 +68,8 @@ function displayWeather() {
     const weatherSection = document.getElementById('weather-section');
     const reportSpan = document.getElementById('report');
 
+    if (!reportSpan) return;
+
     // Sample weather data
     reportSpan.innerHTML = `
         <div>
@@ -79,6 +83,8 @@ function displayWeather() {
 // Display forecast (sample)
 function displayForecast() {
     const forecastSpan = document.getElementById('forecast');
+
+    if (!forecastSpan) return;
 
     forecastSpan.innerHTML = `
         <div>
