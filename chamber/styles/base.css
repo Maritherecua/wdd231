@@ -691,8 +691,15 @@ form.designOne {
     border-left-width: 5px;
     border-left-color: #555;
     font-size: 1rem;
-    color: #3d405b;
+    color: #1a1a1a;
+    background-color: #ffffff;
     width: 450px;
+}
+
+.designOne input::placeholder,
+.designOne textarea::placeholder {
+    color: #595959;
+    opacity: 1;
 }
 
 .designOne input:required {
@@ -733,7 +740,7 @@ form.designOne {
 }
 
 .designOne input:-webkit-autofill {
-    -webkit-text-fill-color: #3d405b;
+    -webkit-text-fill-color: #1a1a1a;
 }
 
 #results {
