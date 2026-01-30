@@ -178,6 +178,11 @@ nav ul {
     transition: .5s ease;
 }
 
+.nav-links a:focus {
+    outline: 2px solid var(--white);
+    outline-offset: 2px;
+}
+
 /* Styling for the nav display */
 
 .nav-container {
@@ -577,23 +582,18 @@ div.weather p {
     animation-delay: 0.6s;
 }
 
-2px 20px;
-cursor: pointer;
-border: 2px solid white;
-background-color: #1B5E20;
-color: white;
-border-radius: 5px;
-font-size: 1rem;
-font-weight: 600;
-transition: background-color 0.3s;
-min-height: 44px;
-min-width: 44px border: 2px solid white;
-background-color: #1B5E20;
-color: white;
-border-radius: 5px;
-font-size: 1rem;
-font-weight: 600;
-transition: background-color 0.3s;
+.mslvl aside button {
+    padding: 12px 20px;
+    cursor: pointer;
+    border: 2px solid white;
+    background-color: #1B5E20;
+    color: white;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: background-color 0.3s;
+    min-height: 44px;
+    min-width: 44px;
 }
 
 .mslvl aside button:hover {
@@ -680,13 +680,19 @@ form.designOne {
 .designOne label {
     display: block;
     font-size: 0.9rem;
-    color: black;
+    color: #1a1a1a;
     padding-top: 0.2rem;
+}
+
+.designOne input[type="radio"],
+.designOne input[type="checkbox"] {
+    accent-color: var(--primary-color);
+    margin-right: 8px;
 }
 
 .designOne h3 {
     font-size: 0.9rem;
-    color: black;
+    color: #1a1a1a;
     margin: 1.5rem 0 0.2rem 0;
     border-bottom: 1px solid #eee;
 }
