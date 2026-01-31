@@ -80,7 +80,7 @@
     .nav-container .nav-links {
         display: flex;
         justify-content: flex-end;
-        background-color: #fff0;
+        background-color: var(--primary-color);
         grid-template-rows: unset;
     }
 
@@ -100,10 +100,12 @@
     .nav-container .nav-links a {
         color: white;
         font-weight: 600;
+        background-color: var(--primary-color);
     }
 
     .nav-container .nav-links a.active {
         color: white;
+        background-color: #006570;
         text-decoration: 2px white underline;
     }
 
