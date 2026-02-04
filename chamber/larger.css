@@ -132,6 +132,14 @@
         gap: 2rem;
         align-items: start;
     }
+    /*discover page*/
+    #allplaces {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+       }
+       #allplaces div img {
+        width: 175px;
+      }
 
     .footer-background {
         height: 300px;
