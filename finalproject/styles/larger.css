@@ -1,0 +1,42 @@
+@media only screen and (min-width: 38rem) {
+    button#hamburger {
+        display: none;
+    }
+
+    header {grid-template-columns: 50px auto 44px ;}
+
+    nav {
+        grid-template-rows: 1fr;
+    }
+
+    nav ul {
+        display: flex;
+    }
+
+    nav ul li a {
+        border: none;
+        padding: .5rem 2rem;
+    }
+
+    nav ul li:last-child a {
+        border: none;
+    }
+
+    header,
+    main,
+    nav,
+    footer {
+        max-width: 900px;
+        margin: 0 auto;
+    }
+    /*Services Buttons*/
+.sbuttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: 10px;
+}
+/*Services Cards*/
+.services {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}

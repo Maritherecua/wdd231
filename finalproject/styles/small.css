@@ -1,5 +1,18 @@
+/*base styles for small screens*/
+:root {
+    --primary-color: #6A11CB;
+    --secondary-color: #2575FC;
+    --accent-color: #F5A623;
+    --background-color: #F0F4F8;
+    --text-color: #333333;
+}
+
+
+
 /*Natural box layout model to all elements in all browsers*/
-*, *::before, *::after {
+* {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
 body {
