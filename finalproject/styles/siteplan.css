@@ -3,12 +3,13 @@
     --secondary-color: #2575FC;
     --accent-color: #F5A623;
     --background-color: #F0F4F8;
-    --text-color: #333333;
+    --text-color: black;
 }
 
-header {grid-template-columns: 50px auto 44px ;
+header {
+    grid-template-columns: 50px auto 44px;
     align-items: end;
-    padding-left: 10px ;
+    padding-left: 10px;
     background-color: var(--primary-color);
     text-align: center;
     font-size: 1.5rem;
@@ -18,38 +19,62 @@ header {grid-template-columns: 50px auto 44px ;
 
 @media only screen and (min-width: 38rem) {
     button#hamburger {
-        display: none;  
+        display: none;
     }
+
     header,
     main,
     nav,
-    footer  {
+    footer {
         max-width: 1200px;
         margin: 0 auto;
     }
+
     main {
-        padding: 4rem 1rem;
+        padding: 2rem 1rem;
         background-color: var(--background-color);
         border-left: 1px solid var(--primary-color);
-      h1 {
-        font-size: 2.5rem;
-        margin-bottom: 2rem;
-        color: var(--primary-color);
-        text-align: center;
-    }   h2 {
+        border-right: 1px solid var(--primary-color);
+        border-bottom: 1px solid var(--primary-color);
+    }
+
+    main h1 {
         font-size: 2rem;
-        margin-bottom: 1.5rem;
+        margin-bottom: 2rem;
+        color: black;
+        text-align: center;
+    }
+
+    main h2 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
         color: var(--secondary-color);
         text-align: center;
-    }   h3 {
+    }
+
+    main h3 {
         font-size: 1.5rem;
         margin-bottom: 1rem;
         color: var(--accent-color);
+        text-align: center;
     }
-    p {
-        font-size: 1.1rem;
+
+    main p {
+        font-size: 1.3rem;
         line-height: 1.6;
         color: var(--text-color);
     }
+
+    div.wireframe {
+        text-align: center;
+        margin: 2rem 0;
+    }
+
+    footer {
+        background-color: var(--primary-color);
+        color: white;
+        text-align: center;
+        padding: 1rem 0;
+        margin-top: 20px;
     }
 }
