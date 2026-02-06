@@ -15,13 +15,15 @@ export const places = [
         "name": "Manteca Cinema",
         "description": "A local movie theater that shows the latest films and offers a fun and affordable entertainment option for families and friends.",
         "address": "1001 W Yosemite Ave, Manteca, CA 95337",
-        "image_link": "cinema.webp"
+        "image_link": "cinema.webp",
+        "cost": "$10-$16 per ticket"
     },
     {
         "name": "Manteca Skate Park",
         "description": "A popular skate park that offers a fun and challenging environment for skateboarders of all skill levels.",
         "address": "1001 W Yosemite Ave, Manteca, CA 95337",
-        "image_link": "skatepark.webp"
+        "image_link": "skatepark.webp",
+        "cost": "Free"
     },
     {
         "name": "Manteca Golf Course",

@@ -783,50 +783,61 @@ form.designOne {
     border: 1px solid #e07a5f;
     border-radius: 6px;
 }
+
 /* Discover Page Styles */
 #allplaces div {
-  margin: 1rem 8px;
-  padding: 10px;
-  border: 1px solid #999;
-  background-color: #eee;
-  border-radius: 8px;
-  overflow: hidden;
+    margin: 1rem 8px;
+    padding: 10px;
+    border: 1px solid #999;
+    background-color: #eee;
+    border-radius: 8px;
+    overflow: hidden;
 
-  display: grid;
-  gap: 10px;
-  grid-template-areas:
-    "name"
-    "image"
-    "description"
-    "cost"
-    "location"
-    "button";
+    display: grid;
+    gap: 10px;
+    grid-template-areas:
+        "name"
+        "image"
+        "description"
+        "cost"
+        "location"
+        "button";
 }
+
 #allplaces div h2 {
-  margin: 1rem 0px;
-  grid-area: name;
+    margin: 1rem 0px;
+    grid-area: name;
 }
+
 #allplaces div img {
-  width: 100%;
-  grid-area: image;
+    width: 100%;
+    grid-area: image;
 }
+
 #allplaces div p {
-  margin: 0 0 1rem 0px;
-  grid-area: description;
+    margin: 0 0 1rem 0px;
+    grid-area: description;
 }
+
+#allplaces div p.cost {
+    grid-area: cost;
+}
+
 #allplaces div address {
-  margin: 1rem 0px;
-  grid-area: location;
+    margin: 1rem 0px;
+    grid-area: location;
 }
+
 #allplaces div button {
-  margin: 1rem 0px;
-  background-color: #d4295f;
-  color: #eee;
-  border: none;
-  border-radius: 30px;
-  padding: 1rem;
-  grid-area: button;
+    margin: 1rem 0px;
+    background-color: #d4295f;
+    color: #eee;
+    border: none;
+    border-radius: 30px;
+    padding: 1rem;
+    grid-area: button;
 }
+
 /* Footer styles */
 
 footer {
