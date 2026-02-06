@@ -318,11 +318,11 @@ nav ul {
     display: flex;
     flex-direction: column;
     border: .5px solid var(--primary-color);
-    padding: 50px;
+    padding: 25px 15px;
     border-radius: 5px;
     box-shadow: 5px 5px var(--primary-color);
     width: 100%;
-    min-height: 280px;
+    min-height: auto;
 }
 
 #comp-grid div h1 {
@@ -786,46 +786,57 @@ form.designOne {
 
 /* Discover Page Styles */
 #allplaces div {
-    margin: 1rem 8px;
-    padding: 10px;
+    margin: 0.5rem 4px;
+    padding: 8px;
     border: 1px solid #999;
     background-color: #eee;
     border-radius: 8px;
     overflow: hidden;
 
     display: grid;
-    gap: 10px;
+    gap: 8px 15px;
+    grid-template-columns: 150px 1fr;
     grid-template-areas:
-        "name"
-        "image"
-        "description"
-        "cost"
-        "location"
-        "button";
+        "image name"
+        "image description"
+        "image cost"
+        "image location"
+        "image button";
 }
 
 #allplaces div h2 {
-    margin: 1rem 0px;
+    margin: 0;
+    padding-left: 10px;
     grid-area: name;
 }
 
 #allplaces div img {
-    width: 100%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
     grid-area: image;
 }
 
 #allplaces div p {
-    margin: 0 0 1rem 0px;
+    margin: 0;
+    padding-left: 10px;
     grid-area: description;
 }
 
 #allplaces div p.cost {
+    padding-left: 10px;
     grid-area: cost;
 }
 
 #allplaces div address {
-    margin: 1rem 0px;
+    margin: 0;
+    padding-left: 10px;
     grid-area: location;
+}
+
+#allplaces div button {
+    align-self: start;
+    margin-left: 10px;
 }
 
 #allplaces div button {

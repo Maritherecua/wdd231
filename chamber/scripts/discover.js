@@ -38,3 +38,30 @@ function displayItems(list) {
     })
 } //end of displayItems function
 displayItems(places)
+
+// Track visitor's last visit using localStorage
+const timeBetweenElement = document.querySelector("#timeBetween");
+const lastVisit = localStorage.getItem("lastVisit");
+const currentVisit = Date.now();
+
+if (!lastVisit) {
+    // First visit
+    timeBetweenElement.textContent = "Welcome! Let us know if you have any questions.";
+} else {
+    const timeDifference = currentVisit - lastVisit;
+    const daysDifference = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
+
+    if (daysDifference < 1) {
+        // Less than a day
+        timeBetweenElement.textContent = "Back so soon! Awesome!";
+    } else if (daysDifference === 1) {
+        // Exactly 1 day
+        timeBetweenElement.textContent = "You last visited 1 day ago.";
+    } else {
+        // More than 1 day
+        timeBetweenElement.textContent = `You last visited ${daysDifference} days ago.`;
+    }
+}
+
+// Store current visit timestamp
+localStorage.setItem("lastVisit", currentVisit);

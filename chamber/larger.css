@@ -5,6 +5,7 @@
     .list-grid-icons,
     #comp-grid,
     #comp-list,
+    #allplaces,
     .footer-end,
     .footer-container,
     .footer-container,
@@ -132,14 +133,16 @@
         gap: 2rem;
         align-items: start;
     }
+
     /*discover page*/
     #allplaces {
         display: grid;
         grid-template-columns: 1fr 1fr;
-       }
-       #allplaces div img {
+    }
+
+    #allplaces div img {
         width: 175px;
-      }
+    }
 
     .footer-background {
         height: 300px;
