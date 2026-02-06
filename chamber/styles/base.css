@@ -784,7 +784,7 @@ form.designOne {
     border-radius: 6px;
 }
 
-/* Discover Page Styles */
+/* Discover Page Styles - Small screens (320px to 640px) */
 #allplaces div {
     margin: 0.5rem 4px;
     padding: 8px;
@@ -794,14 +794,15 @@ form.designOne {
     overflow: hidden;
 
     display: grid;
-    gap: 8px 15px;
-    grid-template-columns: 150px 1fr;
+    gap: 8px 10px;
+    grid-template-columns: 1fr;
     grid-template-areas:
-        "image name"
-        "image description"
-        "image cost"
-        "image location"
-        "image button";
+        "name"
+        "image"
+        "description"
+        "cost"
+        "location"
+        "button";
 }
 
 #allplaces div h2 {
@@ -811,8 +812,8 @@ form.designOne {
 }
 
 #allplaces div img {
-    width: 150px;
-    height: 150px;
+    width: 100%;
+    height: auto;
     aspect-ratio: 1;
     object-fit: cover;
     grid-area: image;
@@ -831,19 +832,49 @@ form.designOne {
 
 #allplaces div address {
     margin: 0;
-    padding-left: 10px;
     grid-area: location;
 }
 
 #allplaces div button {
     align-self: start;
-    margin: 1rem 0px 1rem 10px;
+    margin: 1rem 0px 1rem 0px;
     background-color: rgb(6, 82, 6);
     color: white;
     border: none;
     border-radius: 30px;
     padding: 1rem;
     grid-area: button;
+}
+
+/* Medium screens (641px to 1024px) */
+@media screen and (min-width: 641px) {
+    #allplaces div {
+        grid-template-columns: 150px 1fr;
+        gap: 8px 15px;
+        grid-template-areas:
+            "image name"
+            "image description"
+            "image cost"
+            "image location"
+            "image button";
+    }
+
+    #allplaces div img {
+        width: 150px;
+        height: 150px;
+    }
+
+    #allplaces div h2,
+    #allplaces div p,
+    #allplaces div p.cost,
+    #allplaces div address,
+    #allplaces div button {
+        padding-left: 10px;
+    }
+
+    #allplaces div button {
+        margin-left: 10px;
+    }
 }
 
 /* Footer styles */

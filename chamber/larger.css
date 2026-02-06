@@ -134,14 +134,39 @@
         align-items: start;
     }
 
-    /*discover page*/
+    /*discover page - Large screens (1025px and above)*/
     #allplaces {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    #allplaces div {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "image"
+            "name"
+            "description"
+            "cost"
+            "location"
+            "button";
     }
 
     #allplaces div img {
-        width: 175px;
+        width: 100%;
+        height: auto;
+        aspect-ratio: 1;
+    }
+
+    #allplaces div h2,
+    #allplaces div p,
+    #allplaces div p.cost,
+    #allplaces div address,
+    #allplaces div button {
+        padding-left: 0;
+    }
+
+    #allplaces div button {
+        margin-left: 0;
     }
 
     .footer-background {
