@@ -10,6 +10,7 @@ function displayItems(list) {
         const theimage = document.createElement("img")
         theimage.src = `images/${place.image_link}`
         theimage.alt = place.name
+        theimage.loading = "lazy"
         //build the name element
         const thename = document.createElement("h2")
         thename.textContent = place.name
