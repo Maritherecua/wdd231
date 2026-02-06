@@ -796,7 +796,7 @@ form.designOne {
   gap: 10px;
   grid-template-areas:
     "name"
-    "photograph"
+    "image"
     "description"
     "cost"
     "location"
@@ -808,7 +808,7 @@ form.designOne {
 }
 #allplaces div img {
   width: 100%;
-  grid-area: photograph;
+  grid-area: image;
 }
 #allplaces div p {
   margin: 0 0 1rem 0px;
