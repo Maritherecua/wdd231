@@ -3,7 +3,7 @@
      {   "name": "Guided meditation",
         "description": "Experience tranquility with a meditation lead by a therapist, designed to help you relax and find inner peace",
         "cost": "Free",
-        "photo": "guided_meditation.webp"
+        "photo": "guidedmeditation.webp"
     },
     {
         "name": "Yoga Classes",
@@ -15,7 +15,7 @@
         "name": "Stress and Pain Management Workshop",
         "description": "A worshop to discover effective stress and pain management techniques though specialized sessions, designed to alleviate chronic pain and improve quality of life.",
         "cost": "$30/session",
-        "photo": "stress_pain_management_workshop.webp"
+        "photo": "stress_painm.webp"
     },
     {
         "name": "Coaching to let go of unhealthy habits",
