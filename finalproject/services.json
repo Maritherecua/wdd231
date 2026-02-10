@@ -1,0 +1,39 @@
+{
+    "services":[
+     {   "name": "Guided meditation",
+        "description": "Experience tranquility with a meditation lead by a therapist, designed to help you relax and find inner peace",
+        "cost": "Free",
+        "photo": "guided_meditation.webp"
+    },
+    {
+        "name": "Yoga Classes",
+        "description": "A beginner-friendly yoga class to improve flexibility, balance, strength, and mental clarity. Suitable for all levels from beginner to advanced.",
+        "cost": "$15/class",
+        "photo": "yoga_classes.webp"
+    },
+    {
+        "name": "Stress and Pain Management Workshop",
+        "description": "A worshop to discover effective stress and pain management techniques though specialized sessions, designed to alleviate chronic pain and improve quality of life.",
+        "cost": "$30/session",
+        "photo": "stress_pain_management_workshop.webp"
+    },
+    {
+        "name": "Coaching to let go of unhealthy habits",
+        "description": "Personalized coaching sessions using hypnotic techniques to help you with specific, future-focused goals, to guide you towards achieving lasting change and success.",
+        "cost": "$50/session",
+        "photo": "coaching.webp"
+    },
+    {
+        "name": "Hypnotherapy",
+        "description": "Hypnotherapy sessions to help you access your subconscious mind and make positive changes in your thoughts, behaviors, and emotions, to help you overcome challenges and improve your well-being.",
+        "cost": "$60/session",
+        "photo": "hypnotherapy.webp"
+    },
+    {
+        "name": "Mindset Coaching",
+        "description": "Sessions focused on developing a positive and resilient mindset to overcome challenges and achieve personal growth, by clearing the past and embracing new perspectives.",
+        "cost": "$40/session",
+        "photo": "mindset_coaching.webp"
+    }
+    ]
+}
