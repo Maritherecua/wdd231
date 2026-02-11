@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="WDD231 final project contact us page">
+        <meta name="author" content="Maria Arroyo">
+        <title>Consciencia Holistica | Contact Us</title>
+        <link rel ="logo" href="logo.pgn">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
+<!--Open Graph-->
+    <meta property="og:title" content="WDD 231 Final Project">
+    <meta property="og:description" content="WDD 231 Final Project by Maria Arroyo">
+    <meta property="og:url" content="https://maritherecua.github.io/wdd231/finalproject">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:image" content="https://maritherecua.github.io/wdd231/finalproject/images/medstones.webp" />
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="wdd231 Final Project - by Maria Arroyo">
+
+    <!-- Script Links -->
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/darkmode.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+
+</head>
+    <body>
+        <header>
+            <img src="images/logo.jpn" class="logo" alt="logo" width="34" heigth="34">
+            <span>Consciencia Holistica</span>
+            <button id="hamburger" aria-label="navigation links"></button>
+
+        </header>
+        <nav id="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Services.html">Services</a></li>
+                <li class="active"><a href="contactus.html">Contact Us</a></li>
+            </ul>
+        </nav>
+        <main>
+            <img src="images/medstones.webp" alt="Medstones Image" class="hero" width="9" height="3" loading="lazy">
+            <h1>Schedule an Appointment</h1>
+
+        <form method="Get" action="comfirm.html" class="designOne">
+                <label>First Name <input type="text" name="first" required autocomplete="given-name" title="First Name"></label>
+                <label>Last Name <input type="text" name="last" required autocomplete="family-name" title="Your Last Name"></label>
+            <label>Cell Phone <input type="tel" name="phone"  autocomplete="tel" title="A Phone Number with dashes" placeholder="987-555-1234" required></label>
+            <label>Appoinntment Date <input type="date" name="date" required></label>
+            
+            <input type="submit" value="Schedule an Appointment">
+
+        
+        </form>
+        </main>
+        <footer>
+            <p>&copy; <span id="currentyear"></span>* Maria Arroyo * CA, USA</p>
+            
+        </footer>
+
+    </body>
+</html>      
