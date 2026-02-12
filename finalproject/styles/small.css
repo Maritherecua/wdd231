@@ -15,35 +15,42 @@
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
+
 body {
     font-weight: 300;
     font-family: "Quicksand", sans-serif;
 }
+
 header {
     display: grid;
     grid-template-columns: 50px auto 44px 44px;
     align-items: end;
-    padding-left: 10px ;
+    padding-left: 10px;
     background-color: var(--primary-color);
 }
+
 header .logo {
     margin-bottom: 6px;
 }
+
 header span {
     font-weight: 700;
     color: white;
     padding-left: 10px;
     font-size: 1.5rem;
 }
+
 nav {
     background-color: var(--primary-color);
 }
+
 nav ul {
     list-style: none;
     margin: 0;
     padding: 0;
 }
-nav ul li a{
+
+nav ul li a {
     display: block;
     color: white;
     text-decoration: none;
@@ -52,20 +59,25 @@ nav ul li a{
     border-bottom: 1px solid white;
     text-align: center;
 }
+
 nav ul li a:hover {
     background-color: var(--secondary-color);
 }
+
 nav ul li.active a {
     background-color: #006570;
 }
+
 /*Dark mode icon*/
-header .dark img{
+header .dark img {
     width: 22px;
     height: 22px;
 
 }
+
 /*Hamburger menu icon*/
-button .dark, button.hamburger img {
+button .dark,
+button.hamburger img {
     width: 40px;
     height: 40px;
     background: none;
@@ -73,50 +85,65 @@ button .dark, button.hamburger img {
     cursor: pointer;
     display: block;
 }
+
 button.hamburger {
     color: white;
     padding-bottom: 5px;
     font-size: 2rem;
 }
+
 button.hamburger::before {
     content: "\2630";
 }
+
 button.hamburger.show::before {
     content: "X";
-}  
+}
+
 /*Animation open and close menu*/
 nav ul {
     max-height: 0;
     overflow: hidden;
 }
+
+nav.show ul {
+    max-height: 500px;
+}
+
 nav.show {
     grid-template-rows: 1fr;
 }
+
 nav {
-    display:grid;
+    display: grid;
     grid-template-rows: 0fr;
     transition: grid-template-rows 0.5s ease-out;
 }
+
 /*Main content styles*/
 main h1 {
     color: #1c2b4d;
     padding: 1rem 0 0 10px;
     margin: hidden;
 }
+
 main p {
     padding: 1rem 0 0 10px;
     color: #334758;
     margin: 0;
 }
+
 .hero-image {
     width: 100%;
     height: auto;
 }
+
 main h2 {
     color: #1c2b4d;
     padding: 1rem 0 0 10px;
     margin: 0;
 }
+
 /*Services cards*/
 .scard {
     border: 1px solid #ccc;
@@ -126,6 +153,7 @@ main h2 {
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
     overflow: hidden;
 }
+
 .scard h2 {
     color: #fff;
     margin: 0;
@@ -134,29 +162,34 @@ main h2 {
     text-align: center;
     background-color: #366f5a;
 }
+
 .scard p {
-    padding:0 0 0 10px;
+    padding: 0 0 0 10px;
     font-size: 0.75rem;
     margin: 5px 10px 5px 0;
     border-left: solid 4px #366f5a;
 }
+
 .scard img {
     width: 100%;
     height: auto;
     margin-top: 10px;
 }
+
 .scard span {
     font-weight: 500;
     margin: 0;
     padding: 1rem;
     display: block;
 }
+
 /*Service buttons*/
 .sbuttons {
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin: 10px;
 }
+
 .sbuttons button {
     background-color: #366f5a;
     color: white;
@@ -167,6 +200,7 @@ main h2 {
     cursor: pointer;
     font-weight: 500;
 }
+
 footer p {
     padding: 1rem 0;
     text-align: center;
