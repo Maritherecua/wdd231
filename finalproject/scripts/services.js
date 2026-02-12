@@ -1,19 +1,11 @@
 // Wait for DOM to be fully loaded
 document.addEventListener('DOMContentLoaded', function() {
-    console.log("Services script loaded")
-    
     const cardsContainer = document.querySelector('#services');
     const buttons = document.querySelectorAll('.mybuttons button');
-    const path = "./data/services.json";
-
-    console.log("Current location:", window.location.href)
-    console.log("Fetching from path:", path)
-    console.log("cardsContainer:", cardsContainer)
-    console.log("buttons found:", buttons.length)
 
     if (!cardsContainer) {
-        console.error("#services container not found")
-        return
+        console.error("ERROR: #services container not found");
+        return;
     }
 
     let allServices = [];
@@ -21,31 +13,27 @@ document.addEventListener('DOMContentLoaded', function() {
     // Fetch services data
     async function fetchServices() {
         try {
-            console.log("Attempting to fetch:", path)
-            const response = await fetch(path);
+            console.log("📡 Fetching services from: ./data/services.json");
+            const response = await fetch('./data/services.json');
+            
             if (!response.ok) {
-                throw new Error(`HTTP error! status: ${response.status}`)
+                throw new Error(`HTTP ${response.status}: Server returned error`);
             }
+            
             const data = await response.json();
+            
+            if (!data.services || !Array.isArray(data.services)) {
+                throw new Error("Invalid JSON structure");
+            }
+            
             allServices = data.services;
-            console.log("Services loaded:", allServices.length, "services");
+            console.log("✅ Loaded", allServices.length, "services");
             displayServices(allServices);
             setupFilters();
+            
         } catch (error) {
-            console.error("Error fetching services:", error);
-            // Try alternate path
-            console.log("Trying alternate path: /finalproject/data/services.json")
-            try {
-                const response = await fetch("/finalproject/data/services.json");
-                if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`)
-                const data = await response.json();
-                allServices = data.services;
-                console.log("Alternate path worked! Services loaded:", allServices.length);
-                displayServices(allServices);
-                setupFilters();
-            } catch (err) {
-                console.error("Alternate path also failed:", err)
-            }
+            console.error("❌ Failed to load services:", error.message);
+            console.log("Make sure: http://localhost:8000/finalproject/services.html is running");
         }
     }
 
