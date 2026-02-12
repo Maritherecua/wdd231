@@ -42,12 +42,18 @@ header span {
 
 nav {
     background-color: var(--primary-color);
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows 0.5s ease-out;
 }
 
 nav ul {
     list-style: none;
     margin: 0;
     padding: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-out;
 }
 
 nav ul li a {
@@ -72,12 +78,10 @@ nav ul li.active a {
 header .dark img {
     width: 22px;
     height: 22px;
-
 }
 
-/*Hamburger menu icon*/
-button .dark,
-button.hamburger img {
+button.dark,
+button.hamburger {
     width: 40px;
     height: 40px;
     background: none;
@@ -100,24 +104,12 @@ button.hamburger.show::before {
     content: "X";
 }
 
-/*Animation open and close menu*/
-nav ul {
-    max-height: 0;
-    overflow: hidden;
-}
-
 nav.show ul {
     max-height: 500px;
 }
 
 nav.show {
     grid-template-rows: 1fr;
-}
-
-nav {
-    display: grid;
-    grid-template-rows: 0fr;
-    transition: grid-template-rows 0.5s ease-out;
 }
 
 /*Main content styles*/
@@ -183,7 +175,7 @@ main h2 {
     display: block;
 }
 
-/*Service buttons*/
+/*Services buttons*/
 .sbuttons {
     display: grid;
     grid-template-columns: 1fr 1fr;
