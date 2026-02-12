@@ -121,6 +121,19 @@
         gap: 15px;
     }
 
+    #comp-grid div img,
+    #spotlight img,
+    #spotlight-container .companyInfo img {
+        transition: transform 0.3s ease, filter 0.3s ease;
+    }
+
+    #comp-grid div img:hover,
+    #spotlight img:hover,
+    #spotlight-container .companyInfo img:hover {
+        transform: scale(1.04);
+        filter: contrast(1.08);
+    }
+
     /*Join our community page*/
     .sbs {
         display: grid;
@@ -155,6 +168,12 @@
         width: 100%;
         height: auto;
         aspect-ratio: 1;
+        transition: transform 0.3s ease, filter 0.3s ease;
+    }
+
+    #allplaces div img:hover {
+        transform: scale(1.04);
+        filter: contrast(1.08);
     }
 
     #allplaces div h2,

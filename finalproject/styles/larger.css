@@ -61,6 +61,15 @@
         grid-template-columns: 1fr 1fr;
     }
 
+    .scard img {
+        transition: transform 0.3s ease, filter 0.3s ease;
+    }
+
+    .scard img:hover {
+        transform: scale(1.04);
+        filter: contrast(1.08);
+    }
+
     /*Form Styles*/
     form {
         max-width: 600px;
