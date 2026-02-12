@@ -3,7 +3,9 @@
         display: none;
     }
 
-    header {grid-template-columns: 50px auto 44px ;}
+    header {
+        grid-template-columns: 50px auto 44px;
+    }
 
     nav {
         grid-template-rows: 1fr;
@@ -11,6 +13,7 @@
 
     nav ul {
         display: flex;
+        max-height: none;
     }
 
     nav ul li a {
@@ -29,14 +32,32 @@
         max-width: 900px;
         margin: 0 auto;
     }
+
     /*Services Buttons*/
-.sbuttons {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    margin: 10px;
-}
-/*Services Cards*/
-.services {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    .sbuttons {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        margin: 10px;
+    }
+
+    /*Services page filter buttons*/
+    .mybuttons {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    /*Offer Cards*/
+    #offer {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    /*Services container*/
+    #services {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    /*Services Cards*/
+    .scards {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
 }

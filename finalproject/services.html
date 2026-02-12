@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,19 +8,18 @@
     <meta name="author" content="Maria Arroyo">
     <title>Consciencia Holistica - Services</title>
 
-     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
-    
+
     <!-- Styles -->
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/larger.css">
     <!--scripts-->
     <script src="scripts/navigation.js" defer></script>
-    <script src="scripts/darkmode.js" defer></script>
     <script src="scripts/getdates.js" defer></script>
-    <script src="scripts/products.js" defer></script>
+    <script src="scripts/services.js" defer></script>
     <!-- Open Graph -->
     <meta property="og:title" content="WDD 231 Final Project">
     <meta property="og:description" content="WDD 231 Final Project for Consciencia Holistica - by Maria Arroyo">
@@ -29,13 +29,14 @@
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="wdd231 Final Project - by Maria Arroyo">
 </head>
+
 <body>
     <header>
         <img src="images/logo.png" class="logo" alt="logo" width="34" height="34">
         <span>Consciencia Holistica</span>
         <button id="hamburger" class="hamburger" aria-label="navigation links"></button>
     </header>
-        <!--<nav>
+    <!--<nav>
             <button id="menu-toggle" aria-label="Toggle navigation menu">Menu</button>
             <ul id="nav-menu" class="hidden">
                 <li><a href="index.html">Home</a></li>
@@ -51,22 +52,23 @@
 
         </ul>
     </nav>
-<main>
-    <img src="images/medstones.webp" alt="meditation stones" class="hero" width="9" height="3" loading="lazy">
-    <h1>Our Services</h1>
-    <div class="mybuttons">
-        <button id="all">All Services</button>
-        <button id="meditation">Guided Meditation</button>
-        <button id="yoga">Yoga Classes</button>
-        <button id="stress">Stress and Pain Management</button>
-        <button id="coaching">Coaching to let go of Unhealthy Habits</button>
-        <button id="hypnotherapy">Hypnotherapy</button>
-        <button id="mindset">Mindset Coaching</button>
-    </div>
-    <div id="services" class="services"></div>
-</main>
-<footer>
-    <p>&copy; <span id="currentyear"></span> Consciencia Holistica.</p>
-</footer>    
+    <main>
+        <img src="images/medstones.webp" alt="meditation stones" class="hero" width="9" height="3" loading="lazy">
+        <h1>Our Services</h1>
+        <div class="mybuttons">
+            <button id="all" class="active">All Services</button>
+            <button id="meditation">Guided Meditation</button>
+            <button id="yoga">Yoga Classes</button>
+            <button id="stress">Stress and Pain Management</button>
+            <button id="coaching">Coaching to let go of Unhealthy Habits</button>
+            <button id="hypnotherapy">Hypnotherapy</button>
+            <button id="mindset">Mindset Coaching</button>
+        </div>
+        <div id="services" class="services"></div>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Consciencia Holistica.</p>
+    </footer>
 </body>
+
 </html>

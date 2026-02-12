@@ -125,6 +125,12 @@ main p {
     margin: 0;
 }
 
+.hero {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
 .hero-image {
     width: 100%;
     height: auto;
@@ -134,6 +140,83 @@ main h2 {
     color: #1c2b4d;
     padding: 1rem 0 0 10px;
     margin: 0;
+}
+
+/*Offer cards*/
+#offer {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    margin: 1rem 10px;
+}
+
+#offer section {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 1rem;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: white;
+}
+
+#offer section div {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+#offer section h2 {
+    color: var(--text-color);
+    margin: 0.5rem 0;
+    padding: 0;
+}
+
+#offer section button {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 0.5rem 1.5rem;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: 500;
+    margin-top: 0.5rem;
+}
+
+#offer section button:hover {
+    background-color: var(--secondary-color);
+}
+
+/*Dialog*/
+#offerdialog {
+    border: 2px solid var(--primary-color);
+    border-radius: 10px;
+    padding: 1.5rem;
+    max-width: 500px;
+}
+
+#offerdialog h2 {
+    color: var(--primary-color);
+    margin: 0 0 1rem 0;
+    padding: 0;
+}
+
+#offerdialog ul {
+    list-style: disc;
+    padding-left: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+#offerdialog button {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 0.5rem 1.5rem;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+#offerdialog button:hover {
+    background-color: var(--secondary-color);
 }
 
 /*Services cards*/
@@ -191,6 +274,42 @@ main h2 {
     border-radius: 20px;
     cursor: pointer;
     font-weight: 500;
+}
+
+/*Services page filter buttons*/
+.mybuttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5rem;
+    margin: 1rem 10px;
+}
+
+.mybuttons button {
+    background-color: var(--primary-color);
+    color: white;
+    border: 1px solid var(--primary-color);
+    padding: 0.75rem;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background-color 0.3s;
+}
+
+.mybuttons button:hover {
+    background-color: var(--secondary-color);
+}
+
+.mybuttons button.active {
+    background-color: var(--accent-color);
+    border-color: var(--accent-color);
+}
+
+/*Services container*/
+#services {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    margin: 1rem 10px;
 }
 
 footer p {
