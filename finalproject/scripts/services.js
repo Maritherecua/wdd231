@@ -48,7 +48,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
             servicecard.innerHTML = `
                 <h2>${service.name}</h2>
-                <img src="images/${service.photo}" alt="${service.name}" width="300" height="200" loading="lazy">
+                <img src="images/${service.photo}" alt="${service.name}" width="400" height="300" loading="lazy">
                 <p>${service.description}</p>
                 <span>${service.cost}</span>
             `;
