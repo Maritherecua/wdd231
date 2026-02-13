@@ -82,6 +82,16 @@ header a:visited {
     color: #ffffff;
 }
 
+main a,
+footer a {
+    color: #1c2b4d;
+}
+
+main a:visited,
+footer a:visited {
+    color: #4a2f73;
+}
+
 nav ul li a:hover {
     background-color: #0a2151;
 }
