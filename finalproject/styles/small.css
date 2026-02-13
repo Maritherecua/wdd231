@@ -64,16 +64,27 @@ nav ul {
 
 nav ul li a {
     display: block;
-    color: white;
+    color: #ffffff;
     text-decoration: none;
     padding: .75rem;
     font-size: 1.2rem;
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid #ffffff;
     text-align: center;
 }
 
+nav ul li a:link,
+nav ul li a:visited {
+    color: #ffffff;
+}
+
 nav ul li a:hover {
-    background-color: var(--secondary-color);
+    background-color: #1f4db3;
+}
+
+nav ul li a:focus-visible {
+    outline: 2px solid #ffffff;
+    outline-offset: 2px;
+    background-color: #1f4db3;
 }
 
 nav ul li.active a {
