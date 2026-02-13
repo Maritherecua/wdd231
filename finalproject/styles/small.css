@@ -65,6 +65,7 @@ nav ul {
 nav ul li a {
     display: block;
     color: white;
+    background-color: var(--primary-color);
     text-decoration: none;
     padding: .75rem;
     font-size: 1.2rem;
@@ -75,6 +76,7 @@ nav ul li a {
 nav ul li a:link,
 nav ul li a:visited {
     color: #ffffff;
+    background-color: var(--primary-color);
 }
 
 header a,
@@ -104,6 +106,7 @@ nav ul li a:focus-visible {
 
 nav ul li.active a {
     background-color: #032b2f;
+    color: #ffffff;
 }
 
 button.hamburger {
@@ -334,7 +337,7 @@ main h2 {
 }
 
 .mybuttons button.active {
-    background-color:dark #366f5a;
+    background-color: dark #366f5a;
     border-color: var(--accent-color);
     accent-color: green;
 }
