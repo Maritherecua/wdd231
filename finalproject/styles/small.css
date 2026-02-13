@@ -73,13 +73,10 @@ nav ul li a {
     text-align: center;
 }
 
-nav ul li a:link,
 nav ul li a:visited {
     color: #ffffff;
-    background-color: var(--primary-color);
 }
 
-header a,
 header a:visited {
     color: #ffffff;
 }
@@ -92,6 +89,13 @@ footer a {
 main a:visited,
 footer a:visited {
     color: #4a2f73;
+}
+
+main a:focus-visible,
+footer a:focus-visible {
+    outline: 2px solid var(--primary-color);
+    outline-offset: 2px;
+    border-radius: 2px;
 }
 
 nav ul li a:hover {
@@ -116,12 +120,15 @@ button.hamburger {
     border: none;
     cursor: pointer;
     display: block;
-}
-
-button.hamburger {
     color: white;
     padding-bottom: 5px;
     font-size: 2rem;
+}
+
+button.hamburger:focus-visible {
+    outline: 2px solid #ffffff;
+    outline-offset: 2px;
+    border-radius: 4px;
 }
 
 button.hamburger::before {
@@ -216,6 +223,11 @@ main h2 {
     background-color: var(--secondary-color);
 }
 
+#offer section button:focus-visible {
+    outline: 2px solid var(--accent-color);
+    outline-offset: 2px;
+}
+
 /*Dialog*/
 #offerdialog {
     border: 2px solid var(--primary-color);
@@ -247,7 +259,12 @@ main h2 {
 }
 
 #offerdialog button:hover {
-    background-color: green;
+    background-color: var(--secondary-color);
+}
+
+#offerdialog button:focus-visible {
+    outline: 2px solid var(--accent-color);
+    outline-offset: 2px;
 }
 
 /*Services cards*/
@@ -313,6 +330,11 @@ main h2 {
     font-weight: 500;
 }
 
+.sbuttons button:focus-visible {
+    outline: 2px solid var(--accent-color);
+    outline-offset: 2px;
+}
+
 /*Services page filter buttons*/
 .mybuttons {
     display: grid;
@@ -337,9 +359,14 @@ main h2 {
 }
 
 .mybuttons button.active {
-    background-color: dark #366f5a;
+    background-color: var(--accent-color);
     border-color: var(--accent-color);
-    accent-color: green;
+    color: #1c2b4d;
+}
+
+.mybuttons button:focus-visible {
+    outline: 2px solid var(--accent-color);
+    outline-offset: 2px;
 }
 
 /*Services container*/
@@ -413,6 +440,11 @@ form input[type="submit"] {
 
 form input[type="submit"]:hover {
     background-color: var(--secondary-color);
+}
+
+form input[type="submit"]:focus-visible {
+    outline: 2px solid var(--accent-color);
+    outline-offset: 2px;
 }
 
 footer p {
