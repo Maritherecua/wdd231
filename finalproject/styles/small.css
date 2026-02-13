@@ -330,11 +330,11 @@ main h2 {
 }
 
 .mybuttons button:hover {
-    background-color: green;
+    background-color: var(--secondary-color);
 }
 
 .mybuttons button.active {
-    background-color: var(--accent-color);
+    background-color:green;
     border-color: var(--accent-color);
 }
 
