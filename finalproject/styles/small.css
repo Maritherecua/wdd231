@@ -173,6 +173,15 @@ main p {
     height: auto;
 }
 
+.aboutus-image {
+    width: 100%;
+    max-width: 900px;
+    height: auto;
+    display: block;
+    margin: 1rem auto;
+    border-radius: 8px;
+}
+
 main h2 {
     color: #1c2b4d;
     padding: 1rem 0 0 10px;
