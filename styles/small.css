@@ -95,6 +95,11 @@ nav a {
     transition: background-color 0.3s;
 }
 
+header a,
+nav a:visited {
+    color: var(--white);
+}
+
 nav a:hover,
 nav a.active {
     background-color: var(--accent-color);
