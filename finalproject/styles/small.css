@@ -334,7 +334,7 @@ main h2 {
 }
 
 .mybuttons button.active {
-    background-color:green;
+    background-color:dark #366f5a;
     border-color: var(--accent-color);
 }
 
