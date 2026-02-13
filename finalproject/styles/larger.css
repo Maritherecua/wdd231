@@ -9,16 +9,20 @@
 
     nav {
         grid-template-rows: 1fr;
+
     }
 
     nav ul {
         display: flex;
         max-height: none;
+
     }
 
     nav ul li a {
         border: none;
         padding: .5rem 2rem;
+        font-weight: 400;
+        
     }
 
     nav ul li:last-child a {
