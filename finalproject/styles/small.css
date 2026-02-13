@@ -181,6 +181,12 @@ main p {
     margin: 1rem auto;
     border-radius: 8px;
 }
+.aboutus-main {
+    border-left: 1rem solid var(--primary-color);
+    border-right: 1rem solid var(--primary-color);
+    padding: 10px;
+    margin: 1rem 0;
+}
 
 main h2 {
     color: #1c2b4d;
