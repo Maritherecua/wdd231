@@ -13,7 +13,6 @@
 * {
     box-sizing: border-box;
     -webkit-box-sizing: border-box;
-    box-sizing: border-box;
 }
 
 body {
@@ -49,6 +48,7 @@ main {
 
 nav {
     background-color: var(--primary-color);
+    color: #ffffff;
     display: grid;
     grid-template-rows: 0fr;
     transition: grid-template-rows 0.5s ease-out;
