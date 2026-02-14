@@ -152,7 +152,7 @@ nav.show {
 main h1 {
     color: #1c2b4d;
     padding: 1rem 0 0 10px;
-    margin: hidden;
+    margin: 0;
 }
 
 main p {
