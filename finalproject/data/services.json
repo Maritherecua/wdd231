@@ -1,39 +1,94 @@
 {
-    "services":[
-     {   "name": "Guided meditation",
-        "description": "Experience tranquility with a meditation lead by a therapist, designed to help you relax and find inner peace",
-        "cost": "Free",
-        "photo": "guidedmeditation.webp"
-    },
-    {
-        "name": "Yoga Classes",
-        "description": "A beginner-friendly yoga class to improve flexibility, balance, strength, and mental clarity. Suitable for all levels from beginner to advanced.",
-        "cost": "$15/class",
-        "photo": "yoga_classes.webp"
-    },
-    {
-        "name": "Stress and Pain Management",
-        "description": "A worshop to discover effective stress and pain management techniques though specialized sessions, designed to alleviate chronic pain and improve quality of life.",
-        "cost": "$30/session",
-        "photo": "stress_painm.webp"
-    },
-    {
-        "name": "Coaching to let go of unhealthy habits",
-        "description": "Personalized coaching sessions using hypnotic techniques to help you with specific, future-focused goals, to guide you towards achieving lasting change and success.",
-        "cost": "$50/session",
-        "photo": "coaching.webp"
-    },
-    {
-        "name": "Hypnotherapy",
-        "description": "Hypnotherapy sessions to help you access your subconscious mind and make positive changes in your thoughts, behaviors, and emotions, to help you overcome challenges and improve your well-being.",
-        "cost": "$60/session",
-        "photo": "hypnotherapy.webp"
-    },
-    {
-        "name": "Mindset Coaching",
-        "description": "Sessions focused on developing a positive and resilient mindset to overcome challenges and achieve personal growth, by clearing the past and embracing new perspectives.",
-        "cost": "$40/session",
-        "photo": "mindset_coaching.webp"
-    }
+    "services": [
+        {
+            "name": "Guided Meditation - Beginner",
+            "description": "Experience tranquility with a guided meditation led by a therapist to help you relax and find inner peace.",
+            "cost": "Free",
+            "photo": "guidedmeditation.webp"
+        },
+        {
+            "name": "Guided Meditation - Deep Relaxation",
+            "description": "A deeper meditation session focused on breath and body awareness to calm the nervous system and improve sleep.",
+            "cost": "$12/session",
+            "photo": "guidedmeditation.webp"
+        },
+        {
+            "name": "Guided Meditation - Focus and Clarity",
+            "description": "A focused meditation experience designed to improve concentration, productivity, and emotional balance.",
+            "cost": "$15/session",
+            "photo": "guidedmeditation.webp"
+        },
+        {
+            "name": "Yoga Classes - Gentle Flow",
+            "description": "A gentle yoga class for all levels that improves flexibility, breathing, and postural alignment.",
+            "cost": "$15/class",
+            "photo": "yoga_classes.webp"
+        },
+        {
+            "name": "Yoga Classes - Core Strength",
+            "description": "A yoga class emphasizing core activation and stability to support healthy movement and reduce back strain.",
+            "cost": "$18/class",
+            "photo": "yoga_classes.webp"
+        },
+        {
+            "name": "Yoga Classes - Restorative",
+            "description": "A restorative yoga class using slow postures and props to reduce tension and encourage deep recovery.",
+            "cost": "$20/class",
+            "photo": "yoga_classes.webp"
+        },
+        {
+            "name": "Stress and Pain Management - Intro",
+            "description": "An introductory session to practical stress and pain management methods for daily use.",
+            "cost": "$30/session",
+            "photo": "stress_painm.webp"
+        },
+        {
+            "name": "Stress and Pain Management - Chronic Relief",
+            "description": "A specialized session for chronic discomfort using relaxation, body awareness, and self-regulation techniques.",
+            "cost": "$35/session",
+            "photo": "stress_painm.webp"
+        },
+        {
+            "name": "Stress and Pain Management - Workplace Reset",
+            "description": "A practical coaching session for managing stress patterns and physical tension related to work routines.",
+            "cost": "$32/session",
+            "photo": "stress_painm.webp"
+        },
+        {
+            "name": "Coaching to let go of unhealthy habits - Foundations",
+            "description": "Personalized coaching to identify triggers, set clear goals, and replace unhelpful routines with healthy habits.",
+            "cost": "$50/session",
+            "photo": "coaching.webp"
+        },
+        {
+            "name": "Coaching to let go of unhealthy habits - Accountability",
+            "description": "Follow-up coaching sessions focused on consistency, motivation, and long-term behavior change.",
+            "cost": "$55/session",
+            "photo": "coaching.webp"
+        },
+        {
+            "name": "Hypnotherapy - Confidence",
+            "description": "Hypnotherapy sessions to strengthen confidence, reduce self-doubt, and reinforce positive thought patterns.",
+            "cost": "$60/session",
+            "photo": "hypnotherapy.webp"
+        },
+        {
+            "name": "Hypnotherapy - Anxiety Support",
+            "description": "Targeted hypnotherapy to support emotional regulation, ease anxiety, and promote calm responses.",
+            "cost": "$65/session",
+            "photo": "hypnotherapy.webp"
+        },
+        {
+            "name": "Mindset Coaching - Resilience",
+            "description": "Sessions focused on building a resilient mindset, reframing setbacks, and developing adaptive coping skills.",
+            "cost": "$40/session",
+            "photo": "mindset_coaching.webp"
+        },
+        {
+            "name": "Mindset Coaching - Goal Clarity",
+            "description": "Coaching for creating clear personal goals and aligned action steps using positive mindset strategies.",
+            "cost": "$45/session",
+            "photo": "mindset_coaching.webp"
+        }
     ]
 }
