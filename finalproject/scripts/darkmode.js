@@ -1,19 +1,23 @@
-// Store the selected elements that we are going to use. 
 const darkbtn = document.querySelector('#dark');
-const mainarea = document.querySelector('main')
-let darkmode = localStorage.getItem("darkmode");
-if (darkmode === "on") {
-    mainarea.classList.add('darkon');
+const pageBody = document.body;
+const DARK_MODE_KEY = 'darkmode';
+
+function applyDarkMode(isEnabled) {
+    pageBody.classList.toggle('dark-mode', isEnabled);
+
+    if (darkbtn) {
+        darkbtn.setAttribute('aria-pressed', String(isEnabled));
+        darkbtn.textContent = isEnabled ? '☀️' : '🌙';
+    }
 }
 
+const savedDarkMode = localStorage.getItem(DARK_MODE_KEY);
+applyDarkMode(savedDarkMode === 'on');
 
-//Toggle the show class off and on
-darkbtn.addEventListener('click', () => {
-	mainarea.classList.toggle('darkon');
-    if (mainarea.classList.contains('darkon')) {
-    localStorage.setItem("darkmode", "on");
-    } else{
-        localStorage.setItem("darkmode", "off");
-    }
-    
-});
+if (darkbtn) {
+    darkbtn.addEventListener('click', () => {
+        const isEnabled = !pageBody.classList.contains('dark-mode');
+        applyDarkMode(isEnabled);
+        localStorage.setItem(DARK_MODE_KEY, isEnabled ? 'on' : 'off');
+    });
+}

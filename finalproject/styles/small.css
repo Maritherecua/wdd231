@@ -132,6 +132,22 @@ button.hamburger:focus-visible {
     border-radius: 4px;
 }
 
+button#dark {
+    width: 40px;
+    height: 40px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #ffffff;
+    font-size: 1.1rem;
+}
+
+button#dark:focus-visible {
+    outline: 2px solid #ffffff;
+    outline-offset: 2px;
+    border-radius: 4px;
+}
+
 button.hamburger::before {
     content: "\2630";
 }
@@ -474,4 +490,36 @@ footer p {
     padding: 1rem 0;
     text-align: center;
     border-top: 1px solid #ccc;
+}
+
+body.dark-mode {
+    background-color: #1c2b4d;
+}
+
+body.dark-mode main h1,
+body.dark-mode main h2,
+body.dark-mode main p,
+body.dark-mode form label,
+body.dark-mode footer p,
+body.dark-mode footer a {
+    color: #ffffff;
+}
+
+body.dark-mode form {
+    background-color: #334758;
+}
+
+body.dark-mode form input[type="text"],
+body.dark-mode form input[type="tel"],
+body.dark-mode form input[type="email"],
+body.dark-mode form input[type="date"],
+body.dark-mode form textarea,
+body.dark-mode form select {
+    background-color: #f0f4f8;
+    color: #333333;
+}
+
+body.dark-mode #offer section,
+body.dark-mode .scard {
+    background-color: #f0f4f8;
 }
