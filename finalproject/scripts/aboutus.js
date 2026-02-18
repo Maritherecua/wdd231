@@ -16,6 +16,7 @@ if (!showHere) {
 } else {
     function displayOffer(data) {
         console.log("Displaying", data.length, "offers")
+        const fragment = document.createDocumentFragment()
         data.forEach(x => {
             const offer = document.createElement("section")
             const learnmore = document.createElement("button")
@@ -25,8 +26,9 @@ if (!showHere) {
         <h2>${x.title}</h2>`
             offer.appendChild(learnmore)
             learnmore.addEventListener("click", () => showstuff(x))
-            showHere.appendChild(offer)
+            fragment.appendChild(offer)
         })
+        showHere.replaceChildren(fragment)
     }
     displayOffer(offers)
     

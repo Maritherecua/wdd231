@@ -218,6 +218,7 @@ main h2 {
     grid-template-columns: 1fr;
     gap: 1rem;
     margin: 1rem 10px;
+    min-height: 980px;
 }
 
 #offer section {

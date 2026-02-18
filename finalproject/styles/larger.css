@@ -22,7 +22,7 @@
         border: none;
         padding: .5rem 2rem;
         font-weight: 400;
-        
+
     }
 
     nav ul li:last-child a {
@@ -52,6 +52,7 @@
     /*Offer Cards*/
     #offer {
         grid-template-columns: 1fr 1fr;
+        min-height: 540px;
     }
 
     /*Services container*/
